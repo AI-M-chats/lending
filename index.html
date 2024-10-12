@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hero Section with Sparkles</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -318,6 +317,8 @@
 
 
   </style>
+  <title>AI-M</title>
+  <link rel="icon" type="image/x-icon" href="logo.svg">
 </head>
 <body>
   <div id="loader" class="w-screen h-full bg-white fixed top-0 left-0 z-50">
@@ -333,7 +334,7 @@
         </a>
         <nav>
           <ul class="flex flex-wrap space-x-4">
-            <li class="hidden md:block"><a href="#about" class="hover:text-gray-400"></a>{{header_about}}</li>
+            <li class="hidden md:block"><a href="#about" class="hover:text-gray-400">{{header_about}}</a></li>
             <li class="hidden md:block"><a href="#solutions" class="hover:text-gray-400">{{header_solutions}}</a></li>
             <li class="hidden md:block"><a href="#features" class="hover:text-gray-400">{{header_features}}</a></li>
             <li class="hidden md:block"><a href="#examples" class="hover:text-gray-400">{{header_examples}}</a></li>
@@ -368,13 +369,17 @@
         <object data="logo.svg" type="image/svg+xml" class="w-full"></object>
       </div>
     </div>
+    <div  id="about"></div>
   </section>
 
-  <section id="about" class="text-white py-20">
+  <section class="text-white py-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">{{about_title}}</h2>
-          <p class="text-lg mb-6">{{about_text}}</p>
+          <div  id="solutions"></div>
+          <p class="text-lg mb-6">
+            {{about_text}}
+          </p>
         </div>
       </div>
     </div>
@@ -388,7 +393,7 @@
 
 <!-- CARUSEL -->
       
-  <section id="solutions" class="text-white">
+  <section class="text-white">
     <div class="container mx-auto px-1 sm:px-4 ">
       <div class="carousel">
         <div class="carousel-wrapper">
@@ -487,6 +492,7 @@
         </div>
       </div>
     </div>
+    <div id="features"></div>
   </section>
   
 
@@ -495,7 +501,7 @@
 
 <!-- FEATURES -->
 
-  <section id="features" class="text-white my-20">
+  <section class="text-white my-20">
     
       <div data-name="features" class="m-4 md:m-20 relative flex justify-center flex-wrap">
           <div class="hidden md:block dv dv1"></div>
@@ -595,6 +601,7 @@
         <p class="mb-8 text-md">{{history3_text}}</p>
       </div>
     </div>
+    <div id="faq"></div>
   </section>
 
 
@@ -605,7 +612,7 @@
 <!-- ACCARDION -->
 
 
-  <section id="faq" class="pt-4 md:py-20">
+  <section class="pt-4 md:py-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-20">
       <h2 class="text-3xl text-white font-bold mb-16 text-center"> {{faq_title}} </h2>
       <div class="accordion">
@@ -753,6 +760,7 @@
         <!-- Остальные вопросы и ответы -->
       </div>
     </div>
+    <div id="contact"></div>
   </section>
   
   
@@ -764,7 +772,7 @@
 <!-- CONTACTS BLOcK -->
 
 
-<section id="contact" class="bg-gray-950 m-4 md:m-20 text-white">
+<section class="bg-gray-950 m-4 md:m-20 text-white">
   <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center md:justify-between">
     <div class="md:w-1/3 space-y-8 text-center">
       <h2 class="text-3xl font-bold">{{contacts_title}}</h2>
@@ -922,7 +930,49 @@
 
 
 
-
+<footer class="bg-gray-900 text-gray-500 py-8 mt-40">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col gap-2 justify-between items-center">
+      <p class="text-sm">
+        All information on the site is created for informational purposes only and is not a public offer. (see <a href="#" class="text-gray-300 hover:text-gray-200">user agreement</a>)
+      </p>
+      <div class="flex flex-wrap items-center md:space-x-4 mt-4 md:mt-0">
+        <p class="text-sm">For the open source icon designer,</p><p>and for the animated icons</p><p>thanks to:</p>
+        <a href="https://iconify.design" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="47" height="22" viewBox="64 0 100 40"><script xmlns="" src="chrome-extension://hoklmmgfnpapgjgcpechhaamimifchmp/frame_ant/frame_ant.js"/>
+            <circle cx="77.5" cy="2.5" r="1.5" fill="#f55b50"/>
+            <circle cx="135.5" cy="2.5" r="1.5" fill="#7f7f7f"/>
+            <g fill="none" stroke-linecap="round" stroke-width="3">
+                    <g stroke="#f55b50">
+                            <path d="M94.5962 8.4038C92.0578 5.86539 87.9422 5.86539 85.4038 8.4038C82.8654 10.9422 82.8654 15.0578 85.4038 17.5962C87.9422 20.1346 92.0578 20.1346 94.5962 17.5962"/>
+                            <path d="M77.5 7.5V19.5"/>
+                            <circle cx="106" cy="13" r="6.5"/>
+                            <path d="M129.5 19.5C129.5 16.525 129.5 14.025 129.5 12C129.5 8.96243 127.038 6.5 124 6.5C120.962 6.5 118.5 8.96243 118.5 12C118.5 14.025 118.5 16.525 118.5 19.5"/>
+                    </g>
+                    <g stroke="#7f7f7f">
+                            <path d="M135.5 7.5V19.5"/>
+                            <path d="M149.5 2.5C147.962 2.5 146.795 2.5 146 2.5C143.5 2.5 141.5 4.5 141.5 7C141.5 8.66667 141.5 12.8333 141.5 19.5"/>
+                            <path d="M145 11.5h2.5"/>
+                            <path d="M153.5 6.5C153.5 8.16667 153.5 9.83333 153.5 11.5C153.5 14 155 15.5 157.5 15.5C157.73 15.5 158.23 15.5 159 15.5"/>
+                            <path d="M154.5 22.5C156.371 22.5 157.704 22.5 158.5 22.5C160.5 22.5 162.5 20.5 162.5 18.5C162.5 17.1667 162.5 13.1667 162.5 6.5"/>
+                    </g>
+            </g>
+            <g fill="#2d9cf4">
+                    <circle cx="74" cy="37" r="1"/>
+                    <circle cx="108" cy="27" r="1"/>
+            </g>
+            <path d="M80 37a5 5 0 0 0 0-10h-3v10h3Zm15 0h-4c-1 0-2-1-2-2v-6c0-1 1-2 2-2h4m-4 5h3m10-2.5a2.5 2.5 0 1 0-2.5 2.5M99 34.5a2.5 2.5 0 1 0 2.5-2.5m6.5 5v-7M120.999 29c-.151-.18-.29-.361-.463-.535a5.001 5.001 0 1 0 .463 6.537V33H120m5 4V27l7 10V27" fill="none" stroke="#2d9cf4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </svg>
+        </a>
+        <p>and</p>
+        <a href="https://www.freepik.com" target="_blank">
+          <svg width="27" height="12" fill="#1273EB" class="h-7 w-auto" aria-labelledby="logo-:R2iqbm:" viewBox="0 0 712 105" xmlns="http://www.w3.org/2000/svg"><path d="M188.21 66.26C187.89 65.93 188.12 65.38 188.58 65.38H190.54C190.54 65.38 190.63 65.38 190.68 65.38C207.77 63.64 222.05 52.6 222.05 33.01C222.05 10.44 203.84 0.0100098 182.98 0.0100098H85.28C83.97 0.0100098 82.9 1.07001 82.9 2.39001V102.54C82.9 103.85 83.96 104.92 85.28 104.92H116.48C117.79 104.92 118.86 103.86 118.86 102.54V70.56C118.86 69.25 119.92 68.18 121.24 68.18H141.52C144.33 68.18 147.01 69.39 148.88 71.49L177.77 104.11C178.39 104.39 178.93 104.63 179.55 104.91H220.73C222.84 104.91 223.9 102.37 222.42 100.86L188.22 66.26H188.21ZM175.2 44.68H121.23C119.92 44.68 118.85 43.62 118.85 42.3V27.13C118.85 25.82 119.91 24.75 121.23 24.75H174.42C182.05 24.75 187.03 28.49 187.03 34.4C187.03 41.25 182.36 44.67 175.2 44.67V44.68Z"></path><path d="M582.55 0.0100098H551.36C550.046 0.0100098 548.98 1.07557 548.98 2.39001V68.87C548.98 70.1844 550.046 71.25 551.36 71.25H582.55C583.864 71.25 584.93 70.1844 584.93 68.87V2.39001C584.93 1.07557 583.864 0.0100098 582.55 0.0100098Z"></path><path d="M582.55 85.41H551.36C550.046 85.41 548.98 86.4756 548.98 87.79V102.54C548.98 103.854 550.046 104.92 551.36 104.92H582.55C583.864 104.92 584.93 103.854 584.93 102.54V87.79C584.93 86.4756 583.864 85.41 582.55 85.41Z"></path><path d="M711.02 101.78L670.88 48.63C669.98 47.44 670.06 45.79 671.06 44.69L708.97 3.11001C710.05 1.92001 709.21 0.0100098 707.6 0.0100098H674.8C673.93 0.0100098 673.1 0.380012 672.52 1.02001L635.92 41.25H635.9C635.78 41.38 635.62 41.48 635.42 41.48H634.1C633.75 41.48 633.48 41.2 633.47 40.86V2.2C633.47 0.990005 632.49 0.0100098 631.28 0.0100098H601.29C600.08 0.0100098 599.1 0.990005 599.1 2.2V102.6C599.1 103.71 600 104.61 601.11 104.61H631.45C632.56 104.61 633.46 103.71 633.46 102.6V83.91C633.46 83.13 633.76 82.37 634.29 81.8L647.61 67.55C647.61 67.55 647.73 67.37 648 67.37H649.8C650.02 67.37 650.15 67.55 650.15 67.55L676.99 103.37C677.57 104.15 678.49 104.61 679.46 104.61H709.6C711.06 104.61 711.9 102.94 711.01 101.77L711.02 101.78Z"></path><path d="M270.58 23.98H301.09C302.4 23.98 303.47 22.92 303.47 21.6V2.38C303.47 1.07 302.41 0 301.09 0H237.98C236.67 0 235.6 1.06 235.6 2.38V102.53C235.6 103.84 236.66 104.91 237.98 104.91H301.09C302.4 104.91 303.47 103.85 303.47 102.53V83.31C303.47 82 302.41 80.93 301.09 80.93H270.36C269.05 80.93 267.98 79.87 267.98 78.55V66.09C267.98 64.66 269.14 63.49 270.58 63.49H301.09C302.4 63.49 303.47 62.43 303.47 61.11V42.36C303.47 41.05 302.41 39.98 301.09 39.98H270.58C269.15 39.98 267.98 38.82 267.98 37.38V26.54C267.98 25.11 269.14 23.94 270.58 23.94V23.98Z"></path><path d="M352.6 23.98H383.11C384.42 23.98 385.49 22.92 385.49 21.6V2.38C385.49 1.07 384.43 0 383.11 0H320C318.69 0 317.62 1.06 317.62 2.38V102.53C317.62 103.84 318.68 104.91 320 104.91H383.11C384.42 104.91 385.49 103.85 385.49 102.53V83.31C385.49 82 384.43 80.93 383.11 80.93H352.38C351.07 80.93 350 79.87 350 78.55V66.09C350 64.66 351.16 63.49 352.6 63.49H383.11C384.42 63.49 385.49 62.43 385.49 61.11V42.36C385.49 41.05 384.43 39.98 383.11 39.98H352.6C351.17 39.98 350 38.82 350 37.38V26.54C350 25.11 351.16 23.94 352.6 23.94V23.98Z"></path><path d="M35.87 23.98H66.38C67.69 23.98 68.76 22.92 68.76 21.6V2.38C68.76 1.07 67.7 0 66.38 0H3.27001C1.96001 0 0.890015 1.06 0.890015 2.38V102.53C0.890015 103.84 1.95001 104.91 3.27001 104.91H30.88C32.19 104.91 33.26 103.85 33.26 102.53L33.28 66.1C33.28 64.67 34.44 63.5 35.88 63.5H66.39C67.7 63.5 68.77 62.44 68.77 61.12V42.37C68.77 41.06 67.71 39.99 66.39 39.99H35.88C34.45 39.99 33.28 38.83 33.28 37.39V26.55C33.28 25.12 34.44 23.95 35.88 23.95L35.87 23.98Z"></path><path d="M496.49 0.0100098H402.03C400.72 0.0100098 399.65 1.07001 399.65 2.39001V102.54C399.65 103.85 400.71 104.92 402.03 104.92H433.23C434.54 104.92 435.61 103.86 435.61 102.54V69.39C435.61 68.72 436.15 68.18 436.82 68.18H496.65C520.63 68.18 538.8 55.68 538.8 33.61C538.8 11.54 520.63 0.0100098 496.5 0.0100098H496.49ZM491.95 44.68H437.98C436.67 44.68 435.6 43.62 435.6 42.3V27.13C435.6 25.82 436.66 24.76 437.98 24.76H491.17C498.8 24.76 503.78 28.49 503.78 34.41C503.78 41.26 499.11 44.68 491.95 44.68Z"></path></svg>
+        </a>
+        <p>respectively.</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -1020,275 +1070,297 @@
 
 // Languages
 const languages = {
-      ru:{
-        header_about: `О нас`,
-        header_solutions: `Решения`,
-        header_features: `Преимущества`,
-        header_examples: `Примеры`,
-        header_faq: `FAQ`,
-        header_contact: `Контакты`,
-        hero_title: `AI-M Создавая будущее.`,
-        hero_description: `Используйте современные возможности интеллектуальных решений для развития вашего бизнеса.`,
-        hero_button: `Смотреть`,
-        about_title: `Команда AI-M`,
-        about_text: `Это энтузиасты искуственного интеллекта и профессионалы в сфере IT-решений для бизнеса. Открывайте возможности современного мира вместе с нами и прокачивайте свою продуктивность с помощь уникальных, персонализированных решений с нашей поддержкой. Создадим будущее вместе!`,
-        bots_btn: `Узнать больше`,
-        bot1_title: `Контент-мейкинг`,
-        bot1_text: `Наш бот способен изучить актуальные новости в вашей нише, составить посты используя ваше смысловое ядро, внести правки и автоматически запостить материал в телеграм-канал или блог.`,
-        bot2_title: `Продажи`,
-        bot2_text: `Внедрите решения, которые позволят мгновено реагировать на входящий запрос, консультировать клиента и собирать о нем данные, эффективно закрывая его на целевое действие. Вы получаете результат в виде записи в таблице или CRM-системе или сообщения.`,
-        bot3_title: `Лид-магниты и автоворонки`,
-        bot3_text: `Боты могут давать персонализированную пользу вашим клиентам от консультации до генерации сайтов, а затем ведут лида по автоворонке, простраивая живое взаимодействие, устанавливая доверие, презентуя и продавая ваши услуги, а также собирая отзывы для допродажи.`,
-        bot4_title: `Виджет`,
-        bot4_text: `Мы готовы предоставить встраиваемый виджет с чатом или умную форму на ваш сайт, способную эффективно взаимодействовать с вашими клиентами или персоналом.`,
-        bot5_title: `HR рекрутинг`,
-        bot5_text: `Наши разработки в сфере рекрутинга позволяют автоматизировать процесс подбора кандидатов, проводить собеседования с учетом резюме соискателя, анализировать слабые и сильные стороны и выдавать детальное заключение.`,
-        bot6_title: `Email-маркетинг`,
-        bot6_text: `Мы готовы предложить бота, который ищет контакты потенциальных клиентов на основе их действий в сети, а затем формулирует уникальное персонализированное сообщение и отправляет его.`,
-        bot7_title: `Коучинг`,
-        bot7_text: `Наши боты могут на основе ваших данных по шагам обучать студентов или новый персонал, а также предоставлять справки и служить глоссарием для компании и сотрудников.`,
-        bot8_title: `Автоматизация процессов`,
-        bot8_text: `С помощью наших разработок вы можете увеличить продуктивность вашего персонала путем предоставления уникальных ссылочных инструкций, уменьшить вероятность человеческих ошибок и увеличить возможности масштабируемости и развития бизнеса.`,
-        bot9_title: `Аналитика`,
-        bot9_text: `Наши боты могут собирать информацию с определенного количества источников и получать удобную статистику и детальный анализ соответствующий выбранным вами целям.`,
-        feature1_title: `Интеграция с множеством каналов`,
-        feature1_text: `Ассистенты могут работать в различных социальных сетях, мессенджерах и в качестве встраиваемых форм и виджетов на сайте.`,
-        feature2_title: `Поддержка и сопровождение`,
-        feature2_text: `Поддержка на всех этапах — от разработки до внедрения. Мы всегда готовы услышать ваши запросы и внести изменения.`,
-        feature3_title: `Гибкость и масштабируемость`,
-        feature3_text: `Наши ассистенты легко адаптируются к изменениям в бизнесе и могут быть расширены новыми функциями и возможностями.`,
-        feature4_title: `Поддержка сторонних API`,
-        feature4_text: `Ассистенты могут подключаться к вашей CRM-системе или к внешним сервисам для лучшей встраиваемости в ваши бизнес-процессы.`,
-        feature5_title: `Мгновенная аналитика и отчетность`,
-        feature5_text: `Ассистенты реагируют на запросы, собирают данные и генерируют отчеты в режиме реального времени.`,
-        feature6_title: `Индивидуальный подход`,
-        feature6_text: `Мы разрабатываем уникальные решения для вашего бизнеса с учетом ваших индивидуальных потребностей и задач.`,
-        feature7_title: `Комплексные решения`,
-        feature7_text: `Мы предлагаем свою систему IT-решений на базе нейросетей - от ботов до веб-приложений, способных взаимодействовать друг с другом.`,
-        feature8_title: `Собственное програмная база`,
-        feature8_text: `Мы разработали собственую систему, позволяющую использовать различные модели ИИ и расширяющую их возможности.`,
-        cta_button: `Узнать больше`,
-        history1_title: `Эвелин - владелица сети отелей.`,
-        history1_text: `Для своей растущей сети она хотела улучшить и ускорить взаимодействие с постояльцами, эффективно их информировать и повышать лояльность.
-<br><br>Чтобы автоматизировать процессы, Эвелин заказала бота, который отвечает на стандартные вопросы, такие как стоимость, условия проживания и услуги отеля, возможность организации мероприятий, а также присылает важные уведомления и информацию о ресторанах, аренде машины, достопримечательностях и её бизнес партнерах.
-<br><br>Кроме этого для Эвелин была настроена email-кампания с персонализированными предложениями для гостей на основе истории бронирований, уведомлениями о специальных предложениях и акциях.
-<br><br>И поскольку её сеть развивается и ей требуется новый персонал, она также получила HR-ассистента, который собирает данные кандидатов, проводит анкетирование и выдает ей заключение в форме резюме.`,
-        history2_title: `Марк занимается обменом криптовалют.`,
-        history2_text: `В своей практике он сталкивался с ошибками операторов и клиентов и жалобами на долгую обработку запросов.
-<br><br>Для ускорения процессов перевода средств и минимизации человеческих ошибок он заказал комплексное решение.
-На сайте была внедрена умная форма, способная проверять курс валют и дающая пошаговые инструкции для перевода по оптимальным реквизитам.
-При получении подтверждения от клиента, форма отправляет уведомление менеджеру в телеграм-бот, который генерирует уникальную инструкцию для данного перевода, содержащую ссылку, необходимую для его проверки, а также кнопку для автоматической балансировки валют. В случае перевода из криптовалюты в фиатную валюту инструкция также содержит копируемые реквизиты и ссылку на подходящий банковский аккаунт для перевода.
-Таким образом, ему удалось сохранить мануальный контроль за переводами и при этом значительно ускорить подтверждение и исключить ошибки.
-<br><br>Кроме того, для повышения репутации и увеличения трафика Марк заказал собственный новостной телеграм-канал, для которого бот собирает актуальную информацию в сфере криптовалют из разных источников, анализирует и пишет уникальные статьи, сопровождая их генерацией релевантных картинок.`,
-        history3_title: `Алина - блогер.`,
-        history3_text: `Ей постоянно был нужен новый актуальный контент, она хотела повысить лояльность и вовлеченность своей аудитории, а также увеличить продажи своих авторских курсов.
-<br><br>Для этого для неё был разработан бот-копирайтер, который автоматически создает контент-план и после согласования генерирует и выкладывает посты в ее телеграм-канал. Для создания reels-video был создан бот, который формирует сценарий для видео с учетом её предыдущих работ и в её стиле с учётом трендов или по её запросу.
-<br><br>А для продажи своих курсов она предложила своим подписчикам пройти серию уроков в специальном боте, который объясняет материал, дает задание и проверяет его, а после этого переходит к следующему уроку. В конце пробной серии занятий бот подталкивает пользователя пройти полный курс, отправляя мотивирующие сообщения каждый день.`,
-        faq_title: `Часто задаваемые вопросы`,        
-        faq1_question: `Какие задачи могут выполнять ваши ИИ-ассистенты?`,
-        faq1_answer: `Наши ИИ-ассистенты способны автоматизировать широкий спектр задач, таких как обработка запросов клиентов, управление контентом, создание маркетинговых кампаний, сбор и анализ данных и многие другие. Возможности действительно широки и мы готовы подобрать именно тот функционал, который подойдет под ваши конкретные задачи.`,
-        faq2_question: `Какие типы бизнесов могут использовать ваших ИИ-ассистентов?`,
-        faq2_answer: `Наши решения универсальны и подходят для различных отраслей: e-commerce, финансы, маркетинг, HR, логистика, образование и многое другое.`,
-        faq3_question: `Можем ли мы изменить или добавить функции ассистента после внедрения?`,
-        faq3_answer: `Да, наши ассистенты могут быть легко обновлены или расширены новыми функциями по мере изменения ваших бизнес-потребностей или стратегий.`,
-        faq4_question: `Могут ли ваши ИИ-ассистенты обучаться и улучшать свои действия со временем?`,
-        faq4_answer: `Да, многие наши ассистенты используют алгоритмы машинного обучения, что позволяет им становиться более эффективными по мере использования и анализа данных. Кроме того, ассистент может быть простроен таким образом, чтобы обучаться на основе взаимодействий с вами или вашими клиентами и учитывать историю этих взаимодействий в дальнейшем.`,
-        faq5_question: `Есть ли ограничения на количество пользователей, которые могут работать с ассистентом?`,
-        faq5_answer: `Нет, наши решения масштабируются в зависимости от ваших потребностей, и ассистенты могут поддерживать работу с любым количеством пользователей.`,
-        faq6_question: `Смогут ли ассистенты работать 24/7?`,
-        faq6_answer: `Да, наши ИИ-ассистенты работают круглосуточно, обеспечивая непрерывную поддержку и выполнение задач, даже когда сотрудники не на месте.`,
-        faq7_question: `Можно ли интегрировать ассистентов с социальными сетями и мессенджерами?`,
-        faq7_answer: `Да, наши ассистенты могут работать с популярными платформами, такими как Telegram, Instagram, WhatsApp и другими, чтобы взаимодействовать с клиентами через социальные сети и мессенджеры.`,
-        faq8_question: `Как долго занимает разработка ИИ-ассистента?`,
-        faq8_answer: `Разработка занимает обычно 2-4 недели, однако всё зависит от вашего конкретного запроса, мы готовы обрисовать сроки сразу же после обсуждения и формирования вашего личного технического задания.`,
-        faq9_question: `Сколько стоят ваши решения?`,
-        faq9_answer: `Каждый проект стоит по-разному, исходя из ваших индивидуальных потребностей. Однако мы сразу готовы заявить, что не берем денег за разработку, а взымаем помесячную оплату, устанавливаемую на основе договоренности в зависимости от сложности ассистента. Чтобы начать разработку комплексных решений, мы оставляем за собой право запросить плату в размере подписки от отдого до нескольких месяцев, которая впоследствии учитывается и продукт считается оплаченным на этот период.`,
-        faq10_question: `Как проходит наше взаимодействие?`,
-        faq10_answer: `Вы оставляете заявку по кнопке ниже. 
-Мы связываемся с вами и согласовываем ваше техническое задание.
-Через оговоренное время мы предоставляем вам рабочий бот и даем время на правки.
-После этого с учетом ваших пожеланий мы дорабатываем продукт и даем вам его финальную версию.`,
-        contacts_title: `Узнать больше`,
-        contacts_tg: `Telegram`,
-        contacts_chat: `На сайте`, 
-        form_title: `Свяжитесь с нами`, 
-        form_name: `Ваше имя`, 
-        form_contact: `Telegram tag или номер телефона`, 
-        form_comment: `Комментарий`, 
-        form_btn: `Отправить`, 
-        dialog_first: `Здравствуйте! Чем могу помочь?`,
-      },
-      en:{
-        header_about: `About Us`,
-        header_solutions: `Solutions`,
-        header_features: `Features`,
-        header_examples: `Examples`,
-        header_faq: `FAQ`,
-        header_contact: `Contact`,
-        hero_title: `AI-M Creating the Future.`,
-        hero_description: `Use the modern capabilities of intelligent solutions to grow your business.`,
-        hero_button: `view more`,
-        about_title: `The AI-M Team`,
-        about_text: `These are enthusiasts of artificial intelligence and professionals in the field of IT solutions for business. Discover the possibilities of the modern world with us and boost your productivity with unique, personalized solutions with our support. Let's create the future together!`,
-        bots_btn: `Learn More`,
-        bot1_title: `Content Creation`,
-        bot1_text: `Our bot can study the latest news in your niche, create posts using your semantic core, make edits and automatically post the content to your Telegram channel or blog`,
-        bot2_title: `Sales`,
-        bot2_text: `Implement solutions that allow you to instantly respond to incoming requests, consult the client and collect data about them, effectively closing them for the target action. You get the result in the form of a record in a spreadsheet or CRM system or a message.`,
-        bot3_title: `Lead Magnets and Automated Funnels`,
-        bot3_text: `Bots can provide personalized benefits to your clients, from consultation to website generation, and then guide the lead through the automated funnel, building live interaction, establishing trust, presenting and selling your services, as well as collecting feedback for cross-selling.`,
-        bot4_title: `Widget`,
-        bot4_text: `We are ready to provide an embedded widget with chat or a smart form on your website, capable of effectively interacting with your clients or staff.`,
-        bot5_title: `HR Recruitment`,
-        bot5_text: `Our developments in the field of recruitment allow you to automate the process of selecting candidates, conduct interviews taking into account the applicant's resume, analyze strengths and weaknesses and provide a detailed conclusion.`,
-        bot6_title: `Email Marketing`,
-        bot6_text: `We are ready to offer a bot that searches for contacts of potential clients based on their actions on the network, and then formulates a unique personalized message and sends it.`,
-        bot7_title: `Coaching`,
-        bot7_text: `Our bots can step-by-step train students or new personnel based on your data, as well as provide reference information and serve as a glossary for the company and employees.`,
-        bot8_title: `Process Automation`,
-        bot8_text: `With the help of our developments, you can increase the productivity of your staff by providing unique reference instructions, reduce the likelihood of human errors and increase the scalability and development opportunities of your business.`,
-        bot9_title: `Analytics`,
-        bot9_text: `Our bots can collect information from a certain number of sources and obtain convenient statistics and detailed analysis corresponding to the goals you have chosen.`,
-        feature1_title: `Personalized Approach`,
-        feature1_text: `We develop solutions for the specific needs of each business`,
-        feature2_title: `Support and Maintenance`,
-        feature2_text: `Full support at all stages - from development to implementation.`,
-        feature3_title: `Flexibility and Scalability`,
-        feature3_text: `Our assistants easily adapt to changes in the business and can be expanded with new features.`,
-        feature4_title: `API Integrations`,
-        feature4_text: `Assistants can easily connect to your CRM or external services for maximum efficiency.`,
-        feature5_title: `Real-time Analytics and Reporting`,
-        feature5_text: `Assistants respond to requests, collect data and generate reports in real-time, allowing you to make decisions and complete tasks quickly.`,
-        feature6_title: `Integration with Multiple Channels`,
-        feature6_text: `Assistants can be integrated with multiple communication channels, such as website chat, Telegram, WhatsApp, SMS, and more, and we are ready to select the functionality that best suits your specific needs.`,
-        feature7_title: `enText01`,
-        feature7_text: `enText02`,
-        feature8_title: `enText03`,
-        feature8_text: `enText04`,
-        cta_button: `enText05`,
-        history1_title: `enText06`,
-        history1_text: `enText07`,
-        history2_title: `enText08`,
-        history2_text: `enText09`,
-        history3_title: `enText10`,
-        history3_text: `enText11`,
-        faq_title: `Questions`,
-        faq1_question: `What types of businesses can use your AI assistants?`,
-        faq1_answer: `Our solutions are universal and suitable for various industries: e-commerce, finance, marketing, HR, logistics, education and much more.`,
-        faq2_question: `Can we change or add assistant features after implementation?`,
-        faq2_answer: `Yes, our assistants can be easily updated or expanded with new features as your business needs or strategies change.`,
-        faq3_question: `Can your AI assistants learn and improve their actions over time?`,
-        faq3_answer: `Yes, many of our assistants use machine learning algorithms, which allows them to become more efficient as they use and analyze data. In addition, the assistant can be built in such a way that it learns based on interactions with you or your customers and takes into account the history of these interactions going forward.`,
-        faq4_question: `Are there limits on the number of users who can work with the assistant?`,
-        faq4_answer: `No, our solutions scale according to your needs, and assistants can support any number of users.`,
-        faq5_question: `Can the assistants work 24/7?`,
-        faq5_answer: `Yes, our AI assistants work around the clock, providing continuous support and task completion, even when employees are not on site.`,
-        faq6_question: `Can the assistants be integrated with social networks and messengers?`,
-        faq6_answer: `Yes, our assistants can work with popular platforms such as Telegram, Instagram, WhatsApp and others to interact with customers through social networks and messengers.`,
-        faq7_question: `How long does it take to develop an AI assistant?`,
-        faq7_answer: `Development usually takes 2-4 weeks, but it all depends on your specific request, and we are ready to outline the timeline immediately after discussing and forming your personal technical specification.`,
-        faq8_question: `What is the cost of your solutions?`,
-        faq8_answer: `Each project is priced differently based on your individual needs. However, we are immediately ready to state that we do not charge for development, but charge a monthly fee, set based on an agreement depending on the complexity of the assistant. To start developing complex solutions, we reserve the right to request a subscription fee from one to several months, which is subsequently taken into account and the product is considered paid for this period.`,
-        faq9_question: `What is our interaction process?`,
-        faq9_answer: `You submit a request by clicking the button below. We contact you and agree on your technical specification. Within the agreed time, we provide you with a working bot and give you time for revisions. After that, taking into account your wishes, we finalize the product and give you its final version.`,
-        faq10_question: `enText12`,
-        faq10_answer: `enText13`,
-        contacts_title: `enText14`,
-        contacts_tg: `enText15`,
-        contacts_chat: `enText16`, 
-        form_title: `enText17`, 
-        form_name: `enText18`, 
-        form_contact: `enText19`, 
-        form_comment: `enText20`, 
-        form_btn: `enText21`, 
-        dialog_first: `Hi! How can i help you?`,
-      },
-      fr:{
-        header_about: `frText`,
-        header_solutions: `frText`,
-        header_features: `frText`,
-        header_examples: `frText`,
-        header_faq: `frText`,
-        header_contact: `frText`,
-        hero_title: `frText`,
-        hero_description: `frText`,
-        hero_button: `frText`,
-        about_title: `frText`,
-        about_text: `frText`,
-        bots_btn: `frText`,
-        bot1_title: `frText`,
-        bot1_text: `frText`,
-        bot2_title: `frText`,
-        bot2_text: `frText`,
-        bot3_title: `frText`,
-        bot3_text: `frText`,
-        bot4_title: `frText`,
-        bot4_text: `frText`,
-        bot5_title: `frText`,
-        bot5_text: `frText`,
-        bot6_title: `frText`,
-        bot6_text: `frText`,
-        bot7_title: `frText`,
-        bot7_text: `frText`,
-        bot8_title: `frText`,
-        bot8_text: `frText`,
-        bot9_title: `frText`,
-        bot9_text: `frText`,
-        feature1_title: `frText`,
-        feature1_text: `frText`,
-        feature2_title: `frText`,
-        feature2_text: `frText`,
-        feature3_title: `frText`,
-        feature3_text: `frText`,
-        feature4_title: `frText`,
-        feature4_text: `frText`,
-        feature5_title: `frText`,
-        feature5_text: `frText`,
-        feature6_title: `frText`,
-        feature6_text: `frText`,
-        feature7_title: `frText`,
-        feature7_text: `frText`,
-        feature8_title: `frText`,
-        feature8_text: `frText`,
-        cta_button: `frText`,
-        history1_title: `frText`,
-        history1_text: `frText`,
-        history2_title: `frText`,
-        history2_text: `frText`,
-        history3_title: `frText`,
-        history3_text: `frText`,
-        faq_title: `frText`,
-        faq1_question: `frText`,
-        faq1_answer: `frText`,
-        faq2_question: `frText`,
-        faq2_answer: `frText`,
-        faq3_question: `frText`,
-        faq3_answer: `frText`,
-        faq4_question: `frText`,
-        faq4_answer: `frText`,
-        faq5_question: `frText`,
-        faq5_answer: `frText`,
-        faq6_question: `frText`,
-        faq6_answer: `frText`,
-        faq7_question: `frText`,
-        faq7_answer: `frText`,
-        faq8_question: `frText`,
-        faq8_answer: `frText`,
-        faq9_question: `frText`,
-        faq9_answer: `frText`,
-        faq10_question: `frText`,
-        faq10_answer: `frText`,
-        contacts_title: `frText`,
-        contacts_tg: `frText`,
-        contacts_chat: `frText`, 
-        form_title: `frText`, 
-        form_name: `frText`, 
-        form_contact: `frText`, 
-        form_comment: `frText`, 
-        form_btn: `frText`, 
-        dialog_first: `frText`,
-      }
-    }
+  ru: {
+    header_about: `О нас`,
+    header_solutions: `Решения`,
+    header_features: `Преимущества`,
+    header_examples: `Примеры`,
+    header_faq: `FAQ`,
+    header_contact: `Контакты`,
+    hero_title: `AI-M Создавая будущее.`,
+    hero_description: `Используйте современные возможности интеллектуальных решений для развития вашего бизнеса.`,
+    hero_button: `Узнать больше`,
+    about_title: `Команда AI-M`,
+    about_text: `Мы - энтузиасты искуственного интеллекта и профессионалы в сфере IT-решений для бизнеса. Открывайте возможности современного мира вместе с нами и прокачивайте свою продуктивность с помощь уникальных, персонализированных решений с нашей поддержкой. Создадим будущее вместе!`,
+    bots_btn: `Узнать больше`,
+    bot1_title: `Контент-мейкинг`,
+    bot1_text: `Наш бот способен изучать актуальные новости по выбранным тематикам, составлять посты, используя ваше смысловое ядро, вносить правки и автоматически постить материал в телеграм-канал или блог.`,
+    bot2_title: `Продажи`,
+    bot2_text: `Внедрите решения, которые позволяют мгновено реагировать на входящий запрос, консультировать клиента и собирать о нем данные, эффективно закрывая его на целевое действие. Вы получаете результат в виде записи в таблице или CRM-системе или сообщения.`,
+    bot3_title: `Лид-магниты и автоворонки`,
+    bot3_text: `Наши боты дадут персонализированную пользу вашим клиентам от консультации до генерации сайтов, а затем проведут лида по автоворонке, презентуя и продавая ваши услуги, а также собирая отзывы для допродажи.`,
+    bot4_title: `Виджет`,
+    bot4_text: `Мы готовы предоставить встраиваемый виджет с чатом или умную форму на ваш сайт, способную эффективно взаимодействовать с вашими клиентами или персоналом.`,
+    bot5_title: `Рекрутинг`,
+    bot5_text: `Наши разработки в сфере HR позволяют автоматизировать процесс подбора кандидатов, проводить собеседования с учетом резюме соискателя, анализировать слабые и сильные стороны и выдавать детальное заключение. `,
+    bot6_title: `Email-маркетинг`,
+    bot6_text: `Мы готовы предложить бота, который ищет контакты потенциальных клиентов на основе их действий в сети, а затем формулирует уникальное персонализированное сообщение и отправляет его.`,
+    bot7_title: `Обучение`,
+    bot7_text: `Наши боты могут на основе ваших данных по шагам обучать студентов или новый персонал, а также предоставлять справки и служить глоссарием.`,
+    bot8_title: `Автоматизация процессов`,
+    bot8_text: `Наши решения помогают повысить продуктивность сотрудников с помощью удобных пошаговых инструкций в формате ссылок, сокращая количество ошибок и открывая новые возможности для масштабирования и роста вашего бизнеса.`,
+    bot9_title: `Аналитика`,
+    bot9_text: `Наши боты могут собирать информацию с определенного количества источников и получать удобную статистику и детальный анализ соответствующий выбранным вами целям.`,
+    feature1_title: `Интеграция с множеством каналов`,
+    feature1_text: `Ассистенты могут работать в различных социальных сетях, мессенджерах и в качестве встраиваемых форм и виджетов на сайте.`,
+    feature2_title: `Поддержка и сопровождение`,
+    feature2_text: `Поддержка на всех этапах — от разработки до внедрения. Мы всегда готовы услышать ваши запросы и внести изменения.`,
+    feature3_title: `Гибкость и масштабируемость`,
+    feature3_text: `Наши ассистенты легко адаптируются к изменениям в бизнесе и могут быть расширены новыми функциями и возможностями.`,
+    feature4_title: `Поддержка сторонних API`,
+    feature4_text: `Ассистенты могут подключаться к вашей CRM-системе или к внешним сервисам для лучшей встраиваемости в ваши бизнес-процессы.`,
+    feature5_title: `Мгновенная аналитика и отчетность`,
+    feature5_text: `Ассистенты реагируют на запросы, собирают данные и генерируют отчеты в режиме реального времени.`,
+    feature6_title: `Индивидуальный подход`,
+    feature6_text: `Мы разрабатываем уникальные решения для вашего бизнеса с учетом ваших индивидуальных потребностей и задач.`,
+    feature7_title: `Комплексные решения`,
+    feature7_text: `Мы предлагаем целую комплекс IT-решений на базе нейросетей - от ботов до веб-приложений, способных взаимодействовать друг с другом.`,
+    feature8_title: `Собственная программная база`,
+    feature8_text: `Мы разработали собственную систему, позволяющую использовать различные модели ИИ и расширяющую их возможности.`,
+    cta_button: `Узнать больше`,
+    history1_title: `Эвелин - владелица сети отелей.`,
+    history1_text: `Она хотела улучшить и ускорить взаимодействие с постояльцами, эффективно их информировать и повышать лояльность.
+    <br><br>Для этого Эвелин заказала бота, который отвечает на стандартные вопросы, такие как стоимость номеров, условия проживания и услуги отеля, возможность организации мероприятий, а также присылает важные уведомления и информацию о достопримечательностях, ближайших ресторанах и услугах её бизнес-партнеров, таких как аренда машин.
+    <br><br>Кроме этого для Эвелин была настроена email-кампания с персонализированными предложениями для гостей на основе их истории бронирований, уведомлениями о специальных предложениях и акциях.
+    <br><br>И поскольку её сеть развивается и ей требуется новый персонал, она также получила HR-ассистента, который собирает данные кандидатов, проводит анкетирование и выдает ей заключение в форме резюме.`,
+    history2_title: `Марк занимается обменом криптовалют.`,
+    history2_text: `В своей практике он сталкивался с ошибками операторов и клиентов и жалобами на долгую обработку запросов.
+    <br><br>Для ускорения процессов перевода средств и минимизации человеческих ошибок он заказал комплексное решение.
+    На его сайт была внедрена умная форма, способная проверять курс валют и дающая пошаговые инструкции для перевода по оптимальным реквизитам.
+    При получении подтверждения от клиента, форма отправляет уведомление менеджеру в телеграм-бот, который генерирует уникальную инструкцию для данного перевода, содержащую ссылку, необходимую для его проверки, а также кнопку для автоматической балансировки валют. В случае перевода из криптовалюты в фиатную валюту инструкция также содержит копируемые реквизиты и ссылку на подходящий банковский аккаунт для перевода.
+    <br><br>Таким образом, ему удалось сохранить мануальный контроль за переводами и при этом значительно ускорить подтверждение и исключить ошибки.
+    <br><br>Кроме того, для повышения репутации и увеличения трафика Марк заказал собственный новостной телеграм-канал, для которого бот собирает актуальную информацию в сфере криптовалют из разных источников, анализирует и пишет уникальные статьи, сопровождая их генерацией релевантных картинок.`,
+    history3_title: `Алина - блогер и автор обучающих курсов.`,
+    history3_text: `Ей постоянно был нужен новый актуальный контент, она хотела повысить лояльность и вовлеченность своей аудитории, а также увеличить продажи своих авторских курсов.
+    <br><br>Для этого для неё был разработан бот-копирайтер, который автоматически создает контент-план и после согласования генерирует и выкладывает посты в ее телеграм-канал. Для создания же reels-video был создан бот, который формирует для Алины подробный сценарий с готовым текстом и рекомендациями по поводу съемки и подбора треков, учитывая стиль её контента и беря во внимание актуальные тренды.
+    <br><br>А для продажи своих курсов она предложила своим подписчикам пройти серию уроков в специальном боте, который объясняет материал, дает задание и проверяет его, а после этого переходит к следующему уроку. В конце пробной серии занятий бот предлагает пользователю пройти полный курс, отправляя мотивирующие сообщения каждый день.`,
+    faq_title: `Часто задаваемые вопросы`,
+    faq1_question: `Какие задачи могут выполнять ваши ИИ-ассистенты?`,
+    faq1_answer: `Наши ИИ-ассистенты способны автоматизировать широкий спектр задач, таких как обработка запросов клиентов, управление контентом, создание маркетинговых кампаний, сбор и анализ данных и многие другие. Возможности действительно широки и мы готовы подобрать именно тот функционал, который подойдет под ваши конкретные задачи.`,
+    faq2_question: `Какие типы бизнесов могут использовать ваших ИИ-ассистентов?`,
+    faq2_answer: `Наши решения универсальны и подходят для различных отраслей: e-commerce, финансы, маркетинг, HR, логистика, образование и многое другое.`,
+    faq3_question: `Можем ли мы изменить или добавить функции ассистента после внедрения?`,
+    faq3_answer: `Да, наши ассистенты могут быть легко обновлены или расширены новыми функциями по мере изменения ваших бизнес-потребностей или стратегий.`,
+    faq4_question: `Могут ли ваши ИИ-ассистенты обучаться и улучшать свои действия со временем?`,
+    faq4_answer: `Да, многие наши ассистенты используют алгоритмы машинного обучения, что позволяет им становиться более эффективными по мере использования и анализа данных. Кроме того, ассистент может быть простроен таким образом, чтобы обучаться на основе взаимодействий с вами или вашими клиентами и учитывать историю этих взаимодействий в дальнейшем.`,
+    faq5_question: `Есть ли ограничения на количество пользователей, которые могут работать с ассистентом?`,
+    faq5_answer: `Нет, наши решения масштабируются в зависимости от ваших потребностей, и ассистенты могут поддерживать работу с любым количеством пользователей.`,
+    faq6_question: `Смогут ли ассистенты работать 24/7?`,
+    faq6_answer: `Да, наши ИИ-ассистенты работают круглосуточно, обеспечивая непрерывную поддержку и выполнение задач, даже когда сотрудники не на месте.`,
+    faq7_question: `Можно ли интегрировать ассистентов с социальными сетями и мессенджерами?`,
+    faq7_answer: `Да, наши ассистенты могут работать с популярными платформами, такими как Telegram, Instagram, WhatsApp и другими, чтобы взаимодействовать с клиентами через социальные сети и мессенджеры.`,
+    faq8_question: `Как долго занимает разработка ИИ-ассистента?`,
+    faq8_answer: `Разработка занимает обычно 2-4 недели, однако всё зависит от вашего конкретного запроса, мы готовы обрисовать сроки сразу же после обсуждения и формирования вашего личного технического задания.`,
+    faq9_question: `Сколько стоят ваши решения?`,
+    faq9_answer: `Каждый проект стоит по-разному, исходя из ваших индивидуальных потребностей. Однако мы сразу готовы заявить, что не берем денег за разработку, а взымаем помесячную оплату, устанавливаемую на основе договоренности в зависимости от сложности ассистента. Чтобы начать разработку комплексных решений, мы оставляем за собой право запросить плату в размере подписки от отдого до нескольких месяцев, которая впоследствии учитывается и продукт считается оплаченным на этот период.`,
+    faq10_question: `Как проходит наше взаимодействие?`,
+    faq10_answer: `Вы оставляете заявку по кнопке ниже.
+    Мы связываемся с вами и согласовываем ваше техническое задание.
+    Через оговоренное время мы предоставляем вам рабочий бот и даем время на правки.
+    После этого с учетом ваших пожеланий мы дорабатываем продукт и даем вам его финальную версию.`,
+    contacts_title: `Узнать больше`,
+    contacts_tg: `Telegram`,
+    contacts_chat: `На сайте`,
+    form_title: `Свяжитесь с нами`,
+    form_name: `Ваше имя`,
+    form_contact: `Telegram tag или номер телефона`,
+    form_comment: `Комментарий`,
+    form_btn: `Отправить`,
+    dialog_first: `Привет, я - Элис, бот компании AI-M. Я помогу вам лучше понять возможности наших решений и сделать вывод какие из них подходят в вашей ситуации. Скажите, в какой сфере ваш бизнес, что вас интересует или какую задачу вы бы хотели решить?`,
+  },
+  en: {
+    header_about: `About Us`,
+    header_solutions: `Solutions`,
+    header_features: `Advantages`,
+    header_examples: `Examples`,
+    header_faq: `FAQ`,
+    header_contact: `Contact us`,
+    hero_title: `AI-M Creating the Future.`,
+    hero_description: `Modern intelligent solutions for your business.`,
+    hero_button: `Learn more`,
+    about_title: `The AI-M Team`,
+    about_text: `We are artificial intelligence enthusiasts and professionals in IT solutions for businesses. Discover the exciting opportunities that await in the modern world and enhance your productivity with our personalized solutions and reliable support. Let's create the future together!`,
+    bots_btn: `Learn More`,
+    bot1_title: `Content Creation`,
+    bot1_text: `Our bot can analyze news on selected topics, create posts using your semantic core, make edits, and automatically publish the content to your Telegram channel or blog.`,
+    bot2_title: `Sales`,
+    bot2_text: `Our bots will provide a personalized benefit for your clients, from consultations to website generation, and then guide the lead through an automated funnel and collect feedback for upselling opportunities.`,
+    bot3_title: `Lead Magnets and Automated Funnels`,
+    bot3_text: `Bots can provide personalized benefits to your clients, from consultation to website generation, and then guide the lead through the automated funnel, building live interaction, establishing trust, presenting and selling your services, as well as collecting feedback for cross-selling.`,
+    bot4_title: `Widget`,
+    bot4_text: `We are ready to provide an embeddable widget with a chat or a smart form for your website, capable of effectively interacting with your clients or staff.`,
+    bot5_title: `HR Recruitment`,
+    bot5_text: `Our recruitment solutions enable the automation of the candidate selection process, conducting interviews based on the applicant's resume, analyzing their strengths and weaknesses, and providing detailed reports.`,
+    bot6_title: `Email Marketing`,
+    bot6_text: `We offer a bot that identifies potential clients based on their online behavior, then generates and sends a unique, personalized message directly to them.`,
+    bot7_title: `Coaching`,
+    bot7_text: `Our bots can train students or new staff step-by-step using your instructions, provide helpful references, and serve as a glossary for your company and employees.`,
+    bot8_title: `Process Automation`,
+    bot8_text: `Our solutions enhance your team's productivity by providing easy-to-follow, step-by-step instructions in clickable links. This minimizes human errors while unlocking new opportunities for business scalability and growth.`,
+    bot9_title: `Analytics`,
+    bot9_text: `Our bots can gather data from multiple sources and provide you with easy-to-understand statistics and detailed analysis tailored to your specific goals.`,
+    feature1_title: `Multi-Channel Integration`,
+    feature1_text: `Our assistants can operate across various social networks, messaging platforms, and also function as embedded forms and widgets on your website.`,
+    feature2_title: `Support and Maintenance`,
+    feature2_text: `We provide support at every stage — from development to implementation. We are always open to your requests and ready to make adjustments.`,
+    feature3_title: `Flexibility and Scalability`,
+    feature3_text: `Our assistants easily adapt to changes in your business and can be expanded with new features and capabilities.`,
+    feature4_title: `API Integrations`,
+    feature4_text: `Our assistants can connect to your CRM system or external services for seamless integration into your business processes.`,
+    feature5_title: `Instant Analytics and Reporting`,
+    feature5_text: `Our assistants respond to requests, collect data, and generate reports in real time.`,
+    feature6_title: `Personalized Approach`,
+    feature6_text: `We develop unique solutions for your business, tailored to your specific needs and goals.`,
+    feature7_title: `Comprehensive solutions`,
+    feature7_text: `We are ready to offer you a complete system of IT solutions in web development using neural networks, from bots to web applications, interacting with each other.`,
+    feature8_title: `Our Own Software Framework`,
+    feature8_text: `We have developed our own system that allows the use of various AI models and enhances their capabilities.`,
+    cta_button: `Learn more`,
+    history1_title: `Evelyn is the owner of a hotel chain.`,
+    history1_text: `Evelyn wanted to enhance her interactions with guests, ensuring they got the information they needed and increase their loyalty.
+    <br><br>To achieve this, she decided to order a bot that could answer common questions like room rates, hotel services, and event planning. The bot also sends out important alerts and shares info about local attractions, nearby restaurants, and services from her partners, like car rentals.
+    <br><br>On top of that, we set up an email campaign for Evelyn that offers personalized deals based on guests' booking histories, along with updates on special promotions.
+    <br><br>As her hotel chain continues to grow and she needs more staff, she also received an HR assistant that collects candidate info, conducts surveys, and provides her with summaries in resume form.`,
+    history2_title: `Mark deals with cryptocurrency exchange.`,
+    history2_text: `In his practice, he has encountered errors made by operators and clients, along with complaints about the lengthy processing of requests.
+    <br><br>To speed up the transfer processes and minimize human errors, decided to implement a comprehensive solution. A smart form was integrated into his website, capable of checking currency rates and providing step-by-step instructions for transfers using optimal details. Upon receiving confirmation from the client, the form sends a notification to the manager via a Telegram bot, which generates a unique instruction for that specific transfer. This instruction includes a link necessary for verification and a button for automatic currency balancing. If the transfer involves converting cryptocurrency to fiat currency, the instructions also contain copyable details and a link to the appropriate bank account for the transfer.
+    <br><br>This way, Mark was able to maintain manual control over transfers while significantly speeding up confirmations and eliminating errors.
+    <br><br>Additionally, to boost his reputation and increase traffic, Mark set up his own news channel on Telegram. The bot collects up-to-date cryptocurrency information from various sources, analyzes it, and writes unique articles, adding relevant images.`,
+    history3_title: `Alina is a blogger and creator of educational courses.`,
+    history3_text: `Alina always needs fresh and engaging content. She also wanted to boost her audience's loyalty and involvement while increasing sales of her courses.
+    <br><br>To help with this, we developed a copywriting bot for her that automatically creates a content plan. Once Alina approves it, the bot generates and posts updates to her Telegram channel. We also created a special bot for making reels videos, which provides her with detailed scripts, ready-to-use text, and filming tips that take into account her content style and current trends.
+    <br><br>To promote her courses, Alina set up a bot that guides her followers through a series of lessons. The bot explains the material, gives assignments, and checks their work before moving on to the next lesson. At the end of the trial series, it encourages users to sign up for the full course by sending out motivational messages every day.`,
+    faq_title: `FAQ `,
+    faq1_question: `What tasks can your AI assistants perform?`,
+    faq1_answer: `Our AI assistants can automate a wide range of tasks, including handling customer inquiries, managing content, creating marketing campaigns, collecting and analyzing data, and much more. The possibilities are truly vast, and we are ready to tailor the functionality to meet your specific needs.`,
+    faq2_question: `What types of businesses can use your AI assistants?`,
+    faq2_answer: `Our solutions are versatile and suitable for various industries, including e-commerce, finance, marketing, HR, logistics, education, and many more.`,
+    faq3_question: `Can we modify or add features to the assistant after implementation?`,
+    faq3_answer: `Yes, our assistants can be easily updated or enhanced with new features as your business needs or strategies evolve.`,
+    faq4_question: `Can your AI assistants learn and improve their actions over time?`,
+    faq4_answer: `Yes, many of our assistants utilize machine learning algorithms, allowing them to become more effective as they are used and analyze data. Additionally, the assistant can be designed to learn from interactions with you or your clients, taking into account the history of these interactions for future improvements.`,
+    faq5_question: `Are there limitations on the number of users who can work with the assistant?`,
+    faq5_answer: `No, our solutions are scalable to meet your needs, and the assistants can support any number of users.`,
+    faq6_question: `Will the assistants be able to work 24/7?`,
+    faq6_answer: `Yes, our AI assistants operate around the clock, providing continuous support and completing tasks even when your staff is unavailable.`,
+    faq7_question: `Can the assistants be integrated with social networks and messaging apps?`,
+    faq7_answer: `Yes, our assistants can work with popular platforms like Telegram, Instagram, WhatsApp, and others, enabling interaction with clients through social media and messaging apps.`,
+    faq8_question: `How long does it take to develop an AI assistant?`,
+    faq8_answer: `The development typically takes 2 to 4 weeks, but it depends on your specific requirements. We are ready to outline the timeline right after discussing and defining your personalized technical specifications.`,
+    faq9_question: `How much do your solutions cost?`,
+    faq9_answer: `Each project has a different price based on your individual needs. However, we want to clarify that we do not charge upfront for development; instead, we implement a monthly payment model determined by an agreement based on the complexity of the assistant. To initiate the development of complex solutions, we reserve the right to request a subscription fee for a period ranging from one to several months, which will be considered as payment for the product during that time.`,
+    faq10_question: `How does our interaction work?`,
+    faq10_answer: `You submit a request using the button below.
+    We get in touch with you to discuss and finalize your technical specifications.
+    Within the agreed timeframe, we provide you with a working bot and allow time for adjustments.
+    After considering your feedback, we refine the product and deliver the final version to you.`,
+    contacts_title: `Learn more`,
+    contacts_tg: `Telegram`,
+    contacts_chat: `On the website`,
+    form_title: `Contact us`,
+    form_name: `Your name`,
+    form_contact: `Telegram tag or phone number`,
+    form_comment: `Message`,
+    form_btn: `Send`,
+    dialog_first: `Greetings! I'm Alice, the AI-M bot, ready to guide you through the exciting capabilities of our solutions. Please tell me about your business, interests or any challenges you wish to overcome, and together we’ll identify the ideal solution for you!`,
+  },
+  fr: {
+    header_about: `À propos`,
+    header_solutions: `Solutions`,
+    header_features: `Avantages`,
+    header_examples: `Exemples`,
+    header_faq: `FAQ`,
+    header_contact: `Contacts`,
+    hero_title: `AI-M Créer l'avenir.`,
+    hero_description: `Des solutions intelligentes modernes pour votre business.`,
+    hero_button: `En savoir plus`,
+    about_title: `L'équipe AI-M`,
+    about_text: `Nous sommes des passionnés d'intelligence artificielle et des professionnels des solutions informatiques pour les entreprises. Découvrez les opportunités extraordinaires qui vous attendent dans le monde moderne et améliorez votre productivité avec nos solutions personnalisées et notre soutien fiable. Créons l'avenir ensemble !`,
+    bots_btn: `En savoir plus`,
+    bot1_title: `Création de contenu`,
+    bot1_text: `Notre bot peut analyser les actualités sur des sujets sélectionnés, rédiger des publications en utilisant votre noyau sémantique, apporter des ajustements, et publier automatiquement le contenu sur votre chaîne Telegram ou blog.`,
+    bot2_title: `Ventes`,
+    bot2_text: `Nos solutions vous permettent de réagir instantanément aux demandes entrantes, de conseiller vos clients et de collecter des données sur eux, en les guidant efficacement vers l'action souhaitée. Le résultat est présenté sous forme d'entrée dans un tableau, un système CRM ou une notification.`,
+    bot3_title: `Entonnoirs automatisés`,
+    bot3_text: `Nos bots peuvent fournir un utilité personnalisé à vos clients, de la consultation à la génération de sites web, puis les guider à travers un entonnoir automatisé, tout en recueillant le retour pour encourager des ventes supplémentaires.`,
+    bot4_title: `Widget`,
+    bot4_text: `Nous sommes prêts à vous fournir un widget intégrable avec un chat ou un formulaire intelligent pour votre site web, capable d'interagir efficacement avec vos clients ou votre personnel.`,
+    bot5_title: `Ressources humaines`,
+    bot5_text: `Nos solutions permettent d'automatiser le processus de sélection des candidats, de mener des entretiens en tenant compte du CV du candidat, d'analyser leurs forces et faiblesses, et de fournir des rapports détaillés.`,
+    bot6_title: `Marketing par e-mail`,
+    bot6_text: `Nous proposons un bot qui repère des clients potentiels en fonction de leurs actions en ligne, puis rédige et envoie un message unique et personnalisé directement à eux.`,
+    bot7_title: `Coaching`,
+    bot7_text: `Nos bots peuvent former vos étudiants ou nouveaux employés étape par étape en utilisant vos instructions, fournir des références utiles et servir de glossaire pour votre entreprise et vos employés.`,
+    bot8_title: `Automatisation des processus`,
+    bot8_text: `Grâce à nos solutions, vous pouvez augmenter la productivité de votre personnel en fournissant des instructions personnalisées, réduire le risque d'erreurs humaines, et améliorer la scalabilité et le potentiel de croissance de votre entreprise.`,
+    bot9_title: `Analytique`,
+    bot9_text: `Nos bots peuvent collecter des informations à partir de diverses sources et vous fournir des statistiques claires ainsi qu'une analyse détaillée, en fonction des objectifs que vous avez définis.`,
+    feature1_title: `Intégration multi-canaux`,
+    feature1_text: `Nos assistants peuvent fonctionner sur divers réseaux sociaux, plateformes de messagerie, et aussi en tant que formulaires et widgets intégrés sur votre site web.`,
+    feature2_title: `Support et accompagnement`,
+    feature2_text: `Nous offrons un soutien à chaque étape — de la conception à la mise en œuvre. Nous sommes toujours ouverts à vos demandes et prêts à apporter des ajustements.`,
+    feature3_title: `Flexibilité et scalabilité`,
+    feature3_text: `Nos assistants s'adaptent facilement aux changements dans votre entreprise et peuvent être enrichis de nouvelles fonctionnalités et capacités.`,
+    feature4_title: `Intégrations via API`,
+    feature4_text: `Nos assistants peuvent se connecter à votre système CRM ou à des services externes pour une meilleure intégration dans vos processus métier.`,
+    feature5_title: `Analytique et rapports Instantanés`,
+    feature5_text: `Nos assistants réagissent aux demandes, collectent des données et génèrent des rapports en temps réel.`,
+    feature6_title: `Approche personnalisée`,
+    feature6_text: `Nous développons des solutions uniques pour votre entreprise conçues spécialement pour vous.`,
+    feature7_title: `Solutions complètes`,
+    feature7_text: `Nous sommes prêts à vous offrir tout un système de solutions informatiques utilisant des réseaux neuronaux, des bots aux applications web, qui interagissent les unes avec les autres.`,
+    feature8_title: `Notre propre infrastructure logicielle`,
+    feature8_text: `Nous avons développé notre propre système qui permet d'utiliser différents modèles d'IA et d'améliorer leurs capacités.`,
+    cta_button: `En savoir plus`,
+    history1_title: `Évelyne est la propriétaire d'une chaîne d'hôtels.`,
+    history1_text: `Elle souhaitait rendre ses interactions avec les clients plus simples et rapides, en s'assurant qu'ils obtiennent les informations nécessaires tout en renforçant leur fidélité.
+    <br><br>Pour cela, elle a décidé de commander un bot capable de répondre aux questions courantes, comme les tarifs des chambres, les services de l'hôtel et l'organisation d'événements. Le bot envoie également des alertes importantes et partage des informations sur les attractions locales, les restaurants à proximité et les services de ses partenaires, comme la location de voitures.
+    <br><br>En plus de cela, nous avons mis en place une campagne par e-mail pour Évelyne, proposant des offres personnalisées basées sur l'historique de réservation des clients, ainsi que des mises à jour sur des promotions spéciales.
+    <br><br>Alors que sa chaîne hôtelière continue de grandir et qu'elle a besoin de nouveaux employés, elle a également reçu un assistant RH qui collecte les informations des candidats, réalise des sondages et lui fournit des résumés sous forme de CV.`,
+    history2_title: `Mark s'occupe de l'échange de cryptomonnaies.`,
+    history2_text: `Dans sa pratique, il a rencontré des erreurs de la part des opérateurs et des clients, ainsi que des plaintes concernant le temps de traitement des demandes.
+    <br><br>Pour accélérer les processus de transfert de fonds et minimiser les erreurs humaines, il a commandé une solution complexe. Une forme intelligente a été intégrée à son site web, capable de vérifier les taux de change et de fournir des instructions étape par étape pour les transferts avec des détails optimaux. Lorsqu'il reçoit la confirmation du client, le formulaire envoie une notification au gestionnaire via un bot Telegram, qui génère une instruction unique pour le transfert spécifique. Cette instruction comprend un lien nécessaire à la vérification ainsi qu'un bouton pour l'équilibrage automatique des devises. Si le transfert implique la conversion de cryptomonnaie en monnaie fiduciaire, les instructions contiennent également des coordonnées copiables et un lien vers le compte bancaire approprié pour le transfert.
+    <br><br>De cette façon, Mark a pu maintenir un contrôle manuel sur les transferts tout en accélérant considérablement les confirmations et en éliminant les erreurs.
+    <br><br>De plus, pour renforcer sa réputation et augmenter le trafic, Mark a créé sa propre chaîne d'actualités sur Telegram. Le bot collecte des informations à jour sur les cryptomonnaies provenant de différentes sources, les analyse et rédige des articles uniques, accompagnés d'images pertinentes.`,
+    history3_title: `Aline est blogueuse et auteure de cours éducatifs.`,
+    history3_text: `Aline a toujours besoin de contenu frais et captivant. Elle voulait renforcer la fidélité et l'engagement de son audience tout en augmentant les ventes de ses cours.
+    <br><br>Pour l'aider, nous avons développé un bot de rédaction qui crée automatiquement un plan de contenu. Une fois qu'Aline l'approuve, le bot génère et publie des messages sur son canal Telegram. Nous avons également créé un bot spécial pour la réalisation de vidéos reels, qui lui fournit des scénarios détaillés, des textes prêts à l'emploi et des conseils de tournage adaptés à son style de contenu et aux tendances actuelles.
+    <br><br>Pour vendre ses cours, Aline a mis en place un bot qui guide ses abonnés à travers une série de leçons. Le bot explique le contenu, donne des devoirs et les vérifie avant de passer à la leçon suivante. À la fin de la série d'essai, il encourage les utilisateurs à s'inscrire au cours complet en envoyant des messages motivants chaque jour.`,
+    faq_title: `FAQ `,
+    faq1_question: `Quelles tâches peuvent accomplir vos assistants IA ?`,
+    faq1_answer: `Nos assistants IA peuvent automatiser un large éventail de tâches, telles que le traitement des demandes clients, la gestion du contenu, la création de campagnes marketing, la collecte et l'analyse de données, et bien plus encore. Les possibilités sont vraiment vastes, et nous sommes prêts à adapter les fonctionnalités pour répondre à vos besoins spécifiques.`,
+    faq2_question: `Quels types d'entreprises peuvent utiliser vos assistants IA ?`,
+    faq2_answer: `Nos solutions sont polyvalentes et adaptées à divers secteurs d'activité, notamment le commerce électronique, les finances, le marketing, les ressources humaines, la logistique, l'éducation, et bien d'autres encore.`,
+    faq3_question: `Pouvons-nous modifier ou ajouter des fonctionnalités à l'assistant après sa mise en œuvre ?`,
+    faq3_answer: `Oui, nos assistants peuvent être facilement mis à jour ou enrichis de nouvelles fonctionnalités en fonction de l'évolution de vos besoins ou stratégies commerciales.`,
+    faq4_question: `Vos assistants IA peuvent-ils apprendre et améliorer leurs actions au fil du temps ?`,
+    faq4_answer: `Oui, les assistants que nous proposons utilisent des algorithmes d'apprentissage automatique, ce qui leur permet de devenir plus efficaces au fur et à mesure de leur utilisation et de l'analyse des données. De plus, l'assistant peut être conçu pour apprendre à partir des interactions avec vous ou vos clients, en tenant compte de l'historique de ces interactions pour des améliorations futures.`,
+    faq5_question: `Y a-t-il des limites sur le nombre d'utilisateurs qui peuvent travailler avec l'assistant ?`,
+    faq5_answer: `Non, nos solutions sont évolutives en fonction de vos besoins, ce qui permet aux assistants de prendre en charge un nombre illimité d'utilisateurs.`,
+    faq6_question: `Les assistants pourront-ils travailler 24h/24 et 7j/7 ?`,
+    faq6_answer: `Oui, nos assistants IA fonctionnent en permanence, offrant un soutien continu et accomplissant des tâches même lorsque vos employés ne sont pas disponibles.`,
+    faq7_question: `Les assistants peuvent-ils être intégrés aux réseaux sociaux et aux applications de messagerie ?`,
+    faq7_answer: `Oui, nos assistants peuvent fonctionner avec des plateformes populaires telles que Telegram, Instagram, WhatsApp, et d'autres, permettant ainsi d'interagir avec les clients via les réseaux sociaux et les applications de messagerie.`,
+    faq8_question: `Combien de temps faut-il pour développer un assistant IA ?`,
+    faq8_answer: `Le développement prend généralement entre 2 et 4 semaines, mais cela dépend de vos besoins spécifiques. Nous sommes prêts à vous fournir un calendrier dès que nous aurons discuté et défini vos spécifications techniques personnalisées.`,
+    faq9_question: `Combien coûtent vos solutions ?`,
+    faq9_answer: `Chaque projet a un prix différent en fonction de vos besoins spécifiques. Cependant, nous tenons à préciser que nous ne facturons pas de frais de développement à l'avance ; nous proposons plutôt un modèle de paiement mensuel fixé par accord en fonction de la complexité de l'assistant. Pour commencer le développement développement de solutions complexes, nous nous réservons le droit de demander des frais d'abonnement pour une période allant d'un à plusieurs mois, qui seront considérés comme le paiement du produit pendant cette période.`,
+    faq10_question: `Comment se déroule notre interaction ?`,
+    faq10_answer: `Vous soumettez une demande en utilisant le bouton ci-dessous.
+    Nous vous contactons pour discuter et finaliser vos spécifications techniques.
+    Dans le délai convenu, nous vous fournissons un bot fonctionnel et vous laissons le temps pour des ajustements.
+    Après avoir pris en compte vos retours, nous perfectionnons le produit et vous livrons la version finale.`,
+    contacts_title: `Découvrez plus`,
+    contacts_tg: `Sur Telegram`,
+    contacts_chat: `Sur le site`,
+    form_title: `Contactez-nous`,
+    form_name: `Votre nom`,
+    form_contact: `Tag ou numéro de téléphone Telegram`,
+    form_comment: `Message`,
+    form_btn: `Envoyer`,
+    dialog_first: `Bonjour ! Je suis Alice, le bot d'AI-M, prêt à vous guider à travers les capacités passionnantes de nos solutions personnalisées. Parlez-moi de votre entreprise, de vos centres d'intérêt ou des défis que vous souhaitez surmonter, et ensemble, nous identifierons la solution idéale pour vous !`,
+  }
+}
 
 
   let selectedLanguage = window.localStorage.getItem('lang')||document.getElementById('language-select').value;
