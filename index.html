@@ -369,10 +369,13 @@
         <object data="logo.svg" type="image/svg+xml" class="w-full"></object>
       </div>
     </div>
-    <div  id="about"></div>
   </section>
 
-  <section class="text-white py-20">
+
+
+
+  <section class="text-white py-20 relative">
+    <div  id="about" class="absolute -top-24"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">{{about_title}}</h2>
@@ -795,7 +798,7 @@
     </div>
     <div class="md:w-2/3 bg-gray-800 rounded-lg shadow-lg p-6 mt-8 sm:m-8 md:mx-12 md:mt-24 ">
       <h2 class="text-2xl font-bold mb-4">{{form_title}}</h2>
-      <form class="space-y-4">
+      <form id="form" class="space-y-4">
         <div>
           <label  class="block font-medium text-gray-300 mb-1">{{form_name}}</label>
           <input type="text" id="name" name="name" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white" required>
@@ -812,6 +815,10 @@
           {{form_btn}}
         </button>
       </form>
+      <div id="form-send" style="height: 287px; margin-bottom: 20px;" class="flex flex-col justify-center items-center hidden">
+        <img src="clarity--form-line.svg" class="w-16 h-16 my-8" alt="Icon" />
+        <p class="text-lg">{{form_send}}</p>
+      </div>
     </div>
   </div>
 </section>
@@ -896,11 +903,11 @@
       // metadata[webclient]=web&
       let results = [];
       console.log('!!! ',[{role: 'assistant', content: '/start'}, ...chatStorage.dialog].map(m=>({...m, text: m.content})));
-      const resp = await fetch('https://coral-app-s6ege.ondigitalocean.app/integrations/api/dialog?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZhMWFmNDU5YWNjNWRhOGEzZTc4YjciLCJpYXQiOjE3MjgzODYwOTF9.uf06u12c7Jt0j1j-XHVeQTbhWB7qW7bUas-1myr9e9Y',{
+      const resp = await fetch('https://coral-app-s6ege.ondigitalocean.app/integrations/api/dialog?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjM2NDgxYzFjYzMxYzY1NTNkM2Y0ZjgiLCJpYXQiOjE3Mjg5MTQ3ODJ9.69HRiwJ56X1sUWdyJ5W1Fz_ZQHEZfHn-k5PWOBXr-gs',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          trigger: 'ттsite',
+          trigger: 'SiteAI-M',
           dialog: [{role: 'assistant', content: '/start'}, ...chatStorage.dialog]
         })
       })
@@ -1062,7 +1069,8 @@
         })
       });
 
-      alert('Data sent!')
+      document.getElementById('form').classList.add('hidden');
+      document.getElementById('form-send').classList.remove('hidden');
 
     })
   }
@@ -1166,6 +1174,7 @@ const languages = {
     form_contact: `Telegram tag или номер телефона`,
     form_comment: `Комментарий`,
     form_btn: `Отправить`,
+    form_send: `Спасибо, ваша заявка успешно отправлена!`,
     dialog_first: `Привет, я - Элис, бот компании AI-M. Я помогу вам лучше понять возможности наших решений и сделать вывод какие из них подходят в вашей ситуации. Скажите, в какой сфере ваш бизнес, что вас интересует или какую задачу вы бы хотели решить?`,
   },
   en: {
@@ -1262,6 +1271,7 @@ const languages = {
     form_contact: `Telegram tag or phone number`,
     form_comment: `Message`,
     form_btn: `Send`,
+    form_send: `Thank you, your application has been sent!`,
     dialog_first: `Greetings! I'm Alice, the AI-M bot, ready to guide you through the exciting capabilities of our solutions. Please tell me about your business, interests or any challenges you wish to overcome, and together we’ll identify the ideal solution for you!`,
   },
   fr: {
@@ -1358,6 +1368,7 @@ const languages = {
     form_contact: `Tag ou numéro de téléphone Telegram`,
     form_comment: `Message`,
     form_btn: `Envoyer`,
+    form_send: `Merci, votre candidature a été envoyée !`,
     dialog_first: `Bonjour ! Je suis Alice, le bot d'AI-M, prêt à vous guider à travers les capacités passionnantes de nos solutions personnalisées. Parlez-moi de votre entreprise, de vos centres d'intérêt ou des défis que vous souhaitez surmonter, et ensemble, nous identifierons la solution idéale pour vous !`,
   }
 }
