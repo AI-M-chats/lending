@@ -1030,6 +1030,36 @@
     document.querySelector('.carousel-item.control-prev').addEventListener('click', prev);
     document.querySelector('.carousel-item.control-next').addEventListener('click', next);
     }
+
+
+    // add touchscreen swipe
+    const card = document.querySelector('.carousel');
+    // Начальные координаты касания
+    let startX = 0;
+    let startY = 0;
+    // Функция для обработки начала касания
+    card.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+    });
+    // Функция для обработки окончания касания
+    card.addEventListener('touchend', (e) => {
+        const endX = e.changedTouches[0].clientX;
+        const endY = e.changedTouches[0].clientY;
+
+        // Вычисляем разницу координат
+        const diffX = endX - startX;
+        const diffY = endY - startY;
+
+        // Проверяем, что свайп был горизонтальным (по оси X)
+        if (Math.abs(diffX) > Math.abs(diffY)) {
+            if (diffX > 50) next();
+            if (diffX < -50) prev();
+        }
+    });
+
+
+
   }
 // ---
 
