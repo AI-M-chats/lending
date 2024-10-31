@@ -1090,16 +1090,18 @@
         comment: form.querySelector('#comment').value,
       }
       
-      await fetch(`https://api.telegram.org/bot${'7231741401:AAFw5YIgblEphuWa5ZYV7wExnmM-5mt2vdg'}/sendMessage`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          chat_id: '323811652',
-          text: `SiteForm send \n\`\`\`\n${JSON.stringify(data)}\n\`\`\`_`,
-        })
-      });
+      await Promise.all(['323811652','545077453'].map(chat_id => {
+        return fetch(`https://api.telegram.org/bot${'7231741401:AAFw5YIgblEphuWa5ZYV7wExnmM-5mt2vdg'}/sendMessage`, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    chat_id,
+                    text: `SiteForm send \n\`\`\`\n${JSON.stringify(data)}\n\`\`\`_`,
+                  })
+                });
+      }))
 
       document.getElementById('form').classList.add('hidden');
       document.getElementById('form-send').classList.remove('hidden');
