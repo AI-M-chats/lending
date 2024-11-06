@@ -336,7 +336,7 @@
         </a>
         <nav>
           <ul class="flex flex-wrap space-x-4">
-            <li class="hidden md:block"><a href="#about" class="hover:text-gray-400">{{header_about}}</a></li>
+            <!-- <li class="hidden md:block"><a href="#about" class="hover:text-gray-400">{{header_about}}</a></li> -->
             <li class="hidden md:block"><a href="#solutions" class="hover:text-gray-400">{{header_solutions}}</a></li>
             <li class="hidden md:block"><a href="#features" class="hover:text-gray-400">{{header_features}}</a></li>
             <li class="hidden md:block"><a href="#examples" class="hover:text-gray-400">{{header_examples}}</a></li>
@@ -355,6 +355,10 @@
       </div>
     </div>
   </header>
+
+
+
+
 
   <section class="hero h-screen relative overflow-hidden">
     <div class="hero-bg absolute top-0 left-0 w-full h-full">
@@ -376,19 +380,18 @@
 
 
 
-  <section class="text-white py-20 relative">
+  <!-- <section class="text-white py-20 relative">
     <div  id="about" class="absolute -top-24"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl font-bold mb-4">{{about_title}}</h2>
-          <div  id="solutions"></div>
           <p class="text-lg mb-6">
             {{about_text}}
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
 
@@ -397,8 +400,11 @@
 
 
 <!-- CARUSEL -->
-      
+  <div id="solutions" class="relative bottom-48"></div>
   <section class="text-white">
+    <!-- <div class="text-center">
+      <h2 class="text-3xl font-bold mb-16">{{bots_title}}</h2>
+    </div> -->
     <div class="container mx-auto px-1 sm:px-4 ">
       <div class="carousel">
         <div class="carousel-wrapper">
@@ -1124,6 +1130,7 @@ const languages = {
     hero_button: `Узнать больше`,
     about_title: `Команда AI-M`,
     about_text: `Мы - энтузиасты искуственного интеллекта и профессионалы в сфере IT-решений для бизнеса. Открывайте возможности современного мира вместе с нами и прокачивайте свою продуктивность с помощь уникальных, персонализированных решений с нашей поддержкой. Создадим будущее вместе!`,
+    bots_title: `Наши решения`,
     bots_btn: `Узнать больше`,
     bot1_title: `Контент-мейкинг`,
     bot1_text: `Наш бот способен изучать актуальные новости по выбранным тематикам, составлять посты, используя ваше смысловое ядро, вносить правки и автоматически постить материал в телеграм-канал или блог.`,
@@ -1223,6 +1230,7 @@ const languages = {
     hero_button: `Learn more`,
     about_title: `The AI-M Team`,
     about_text: `We are artificial intelligence enthusiasts and professionals in IT solutions for businesses. Discover the exciting opportunities that await in the modern world and enhance your productivity with our personalized solutions and reliable support. Let's create the future together!`,
+    bots_title: `Our solutions`,
     bots_btn: `Learn More`,
     bot1_title: `Content Creation`,
     bot1_text: `Our bot can analyze news on selected topics, create posts using your semantic core, make edits, and automatically publish the content to your Telegram channel or blog.`,
@@ -1320,6 +1328,7 @@ const languages = {
     hero_button: `En savoir plus`,
     about_title: `L'équipe AI-M`,
     about_text: `Nous sommes des passionnés d'intelligence artificielle et des professionnels des solutions informatiques pour les entreprises. Découvrez les opportunités extraordinaires qui vous attendent dans le monde moderne et améliorez votre productivité avec nos solutions personnalisées et notre soutien fiable. Créons l'avenir ensemble !`,
+    bots_title: `Nos solutions`,
     bots_btn: `En savoir plus`,
     bot1_title: `Création de contenu`,
     bot1_text: `Notre bot peut analyser les actualités sur des sujets sélectionnés, rédiger des publications en utilisant votre noyau sémantique, apporter des ajustements, et publier automatiquement le contenu sur votre chaîne Telegram ou blog.`,
