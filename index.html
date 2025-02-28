@@ -828,7 +828,7 @@
           
           <div>{{contacts_tg}}</div>
         </a>
-        <a id="open-chat-modal" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
+        <a id="open-chat-modal-bottom" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
           <svg class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2" /> -->
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -961,6 +961,10 @@
     }
 
     document.getElementById('open-chat-modal').addEventListener('click', () => {
+      chatModal.classList.remove('hidden');
+      document.addEventListener('keypress', listenEnter); 
+    });
+    document.getElementById('open-chat-modal-bottom').addEventListener('click', () => {
       chatModal.classList.remove('hidden');
       document.addEventListener('keypress', listenEnter); 
     });
