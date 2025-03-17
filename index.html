@@ -19,8 +19,8 @@
     body {
       margin: 0;
       padding: 0;
-      /* background-image: url('artistic-blurry-colorful-wallpaper-background (1).jpg'); */ 
-      background-image: url('artistic-blurry-colorful-wallpaper-background_58702-8292.avif');
+      /* background-image: url('media/artistic-blurry-colorful-wallpaper-background (1).jpg'); */ 
+      background-image: url('media/artistic-blurry-colorful-wallpaper-background_58702-8292.avif');
       background-size: contain;
       background-size: cover;
       background-attachment: fixed;
@@ -229,7 +229,7 @@
 
     .dv {
       position: absolute;
-      background: #4c5656;
+      background: #5f8181;
       width:1px;
       height: 40%;
     }
@@ -319,13 +319,41 @@
 
 
 
+
+
+
+  .presentation {
+        scroll-snap-type: x mandatory;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        border: 2px solid #5f8181;
+        border-radius: 22px;
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow-y: hidden;
+    }
+    .presentation::-webkit-scrollbar {
+        display: none;
+    }
+    .presentation-item {
+        scroll-snap-align: start;
+        height: 100.57%;
+        
+    }
+    @media (min-aspect-ratio: 5/4) {
+        .presentation {
+            max-width: calc(485vh / 4);
+        }
+    }
+
+
   </style>
   <title>AI-M разработка ботов с искуственным интелектом</title>
-  <link rel="icon" type="image/x-icon" href="logo.svg">
+  <link rel="icon" type="image/x-icon" href="media/logo.svg">
 </head>
 <body>
   <div id="loader" class="w-screen h-full bg-white fixed top-0 left-0 z-50">
-    <img src="hourglass_8721072.gif" class="w-32 h-32 mx-auto mt-64" alt="Icon" />
+    <img src="media/hourglass_8721072.gif" class="w-32 h-32 mx-auto mt-64" alt="Icon" />
   </div>
 
 
@@ -333,7 +361,7 @@
     <div class="container mx-auto flex justify-between items-center">
       <div class="flex items-center">
         <a href="#" class="text-lg font-bold m-4 md:mr-14  w-16 h-8 flex items-center justify-center">
-          <object data="logo.svg" type="image/svg+xml" class="w-full h-full object-contain"></object>
+          <object data="media/logo.svg" type="image/svg+xml" class="w-full h-full object-contain"></object>
         </a>
         <nav>
           <ul class="flex flex-wrap space-x-4">
@@ -373,7 +401,7 @@
         <a href="#solutions" class="hero-button">{{hero_button}}</a>
       </div>
       <div class="hero-right">
-        <object data="logo.svg" type="image/svg+xml" class="w-full"></object>
+        <object data="media/logo.svg" type="image/svg+xml" class="w-full"></object>
       </div>
     </div>
   </section>
@@ -413,7 +441,7 @@
           <div class="carousel-item carousel-item--prev control-prev">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot9_title}}</h3>
-                  <img src="coding_10971760.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/coding_10971760.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot9_text}}
                   </p>
@@ -423,27 +451,27 @@
           <div class="carousel-item carousel-item--active">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot1_title}}</h3>
-                  <img src="blog_12747824.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/blog_12747824.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot1_text}}
                   </p>
-                  <a href="#contact" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation2" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item carousel-item--next control-next">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot2_title}}</h3>
-                  <img src="chat-bot.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/chat-bot.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot2_text}}
                   </p>
-                  <a href="#contact" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation1" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot3_title}}</h3>
-                  <img src="engagement_9583357.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/engagement_9583357.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot3_text}}
                   </p>
@@ -453,7 +481,7 @@
           <div class="carousel-item">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot4_title}}</h3>
-                  <img src="q-a_17569472.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/q-a_17569472.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot4_text}}
                   </p>
@@ -463,17 +491,17 @@
           <div class="carousel-item">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot5_title}}</h3>
-                  <img src="hr_10051251.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/hr_10051251.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot5_text}}
                   </p>
-                  <a href="#contact" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation0" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item">
             <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
               <h3 class="text-xl font-bold m-8">{{bot6_title}}</h3>
-              <img src="email_8717952.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+              <img src="media/email_8717952.gif" class="w-32 h-32 mx-auto" alt="Icon" />
               <p class="sm:m-8 text-lg">
                 {{bot6_text}}
               </p>
@@ -483,7 +511,7 @@
           <div class="carousel-item">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot7_title}}</h3>
-                  <img src="video-conference_10690269.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/video-conference_10690269.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot7_text}}
                   </p>
@@ -493,7 +521,7 @@
           <div class="carousel-item">
                 <div class="text-gray-600 text-center bg-white rounded-lg shadow-lg p-1 sm:p-8">
                   <h3 class="text-xl font-bold m-8">{{bot8_title}}</h3>
-                  <img src="conveyor-belt_15309756.gif" class="w-32 h-32 mx-auto" alt="Icon" />
+                  <img src="media/conveyor-belt_15309756.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">
                     {{bot8_text}}
                   </p>
@@ -555,42 +583,42 @@
         
         
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--folder-audit-open.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--folder-audit-open.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature5_title}}</h3>
           <p class="text-base font-light">{{feature5_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--code-of-conduct.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--code-of-conduct.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature6_title}}</h3>
           <p class="text-base font-light">{{feature6_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--mjml.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--mjml.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature7_title}}</h3>
           <p class="text-base font-light">{{feature7_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--verilog.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--verilog.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature8_title}}</h3>
           <p class="text-base font-light">{{feature8_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--unity.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--unity.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature1_title}}</h3>
           <p class="text-base font-light">{{feature1_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--todo.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--todo.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature2_title}}</h3>
           <p class="text-base font-light">{{feature2_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--twine.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--twine.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature3_title}}</h3>
           <p class="text-base font-light">{{feature3_text}}</p>
         </div>
         <div class="features-card md:w-1/4 h-1/2 p-8">
-          <img src="catppuccin--api-blueprint.svg" class="w-8 h-8" alt="Icon" />
+          <img src="media/catppuccin--api-blueprint.svg" class="w-8 h-8" alt="Icon" />
           <h3 class="font-medium text-lg my-4">{{feature4_title}}</h3>
           <p class="text-base font-light">{{feature4_text}}</p>
         </div>
@@ -603,50 +631,123 @@
 
   
 
-  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal w-56 mx-auto text-white">
+
+
+<div class="flex justify-center items-center gap-4">
+  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
     </svg>
     <span>{{cta_button}}</span>
   </a>
+</div>
 
 
 
 
-<!-- HISTORYS -->
 
-  <section id="examples" class="py-4 md:py-20 text-sky-100">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start xl:items-center">
-      <div class="w-full lg:w-1/2 p-8" data-aos="fade-right" data-aos-duration="5000" data-aos-once="true">
-        <object data="Evelin.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
-      </div>
-      <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-        <h2 class="text-3xl font-bold mb-4">{{history1_title}}</h2>
-        <p class="mb-8 text-md">{{history1_text}}</p>
+
+<!-- PRESENTATIONS -->
+
+<section id="examples" class="flex flex-col items-center justify-center mt-4 mb-36">
+  <div id="presentations">
+  </div>
+  <div id="contact"></div>
+</section>
+    
+<script>
+  function initPresses(p){
+    const presentations = document.getElementById('presentations');
+    presentations.innerHTML = '';
+    const itemPref = (imgSrc) => `<img src="${imgSrc}" class="presentation-item flex-shrink-0">`
+    Object.keys(p).map((key,i)=>{
+      let ithems = p[key].map(l => itemPref(l)).join('\n');
+      const header = document.createElement('h2');
+      header.innerText = key;
+      header.classList = 'text-white text-2xl font-bold mx-auto mb-4 mt-14';
+      const div = document.createElement('div');
+      div.classList = 'relative w-full flex justify-center overflow-hidden';
+      div.innerHTML = `<a href="#contact">
+<div id="presentation${i}" class="presentation flex overflow-x-scroll scroll-smooth">
+${ithems}
+</div>
+</a>
+<button onclick="prevSlide('presentation${i}')" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);;">❮</button>
+<button onclick="nextSlide('presentation${i}')" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);;">❯</button>`
+      presentations.appendChild(header);
+      presentations.appendChild(div);
+    })
+  }
+  
+  function prevSlide(presentationId) {
+      const carousel = document.getElementById(presentationId);
+      carousel.scrollBy({ left: -carousel.offsetWidth, behavior: 'smooth' });
+  }
+  function nextSlide(presentationId) {
+      const carousel = document.getElementById(presentationId);
+      carousel.scrollBy({ left: carousel.offsetWidth, behavior: 'smooth' });
+  }
+</script>
+
+
+
+
+
+
+
+
+<!-- CONTACTS BLOcK -->
+
+
+<section class="bg-gray-950 m-4 my-20 md:m-20 text-white">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center md:justify-between">
+    <div class="md:w-1/3 space-y-8 text-center">
+      <h2 class="text-3xl font-bold">{{contacts_title}}</h2>
+      <div class="flex flex-col items-start space-y-4 w-48 mx-auto">
+        <a href="https://t.me/ai_m_welcome_bot" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
+          <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon w-16 h-16" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1">
+            <path d="M834.24 127.872a95.168 95.168 0 0 0-29.856 7.136h-0.128c-9.12 3.616-52.48 21.856-118.4 49.504l-236.224 99.488c-169.504 71.36-336.128 141.632-336.128 141.632l1.984-0.768s-11.488 3.776-23.488 12a64.96 64.96 0 0 0-18.752 18.144c-5.888 8.64-10.624 21.856-8.864 35.52 2.88 23.104 17.856 36.96 28.608 44.608 10.88 7.744 21.248 11.36 21.248 11.36h0.256l156.256 52.64c7.008 22.496 47.616 156 57.376 186.752 5.76 18.368 11.36 29.856 18.368 38.624 3.392 4.48 7.36 8.224 12.128 11.232a35.808 35.808 0 0 0 7.872 3.392l-1.6-0.384c0.48 0.128 0.864 0.512 1.216 0.64 1.28 0.352 2.144 0.48 3.776 0.736 24.736 7.488 44.608-7.872 44.608-7.872l1.12-0.896 92.256-84 154.624 118.624 3.52 1.504c32.224 14.144 64.864 6.272 82.112-7.616 17.376-13.984 24.128-31.872 24.128-31.872l1.12-2.88 119.488-612.128c3.392-15.104 4.256-29.248 0.512-42.976a57.824 57.824 0 0 0-24.992-33.504 59.904 59.904 0 0 0-34.144-8.64z m-3.232 65.6c-0.128 2.016 0.256 1.792-0.64 5.664v0.352l-118.368 605.76c-0.512 0.864-1.376 2.752-3.744 4.64-2.496 1.984-4.48 3.232-14.88-0.896l-189.12-144.992-114.24 104.128 24-153.28 308.992-288c12.736-11.84 8.48-14.336 8.48-14.336 0.896-14.528-19.232-4.256-19.232-4.256l-389.632 241.376-0.128-0.64-186.752-62.88v-0.128l-0.48-0.096a8.64 8.64 0 0 0 0.96-0.384l1.024-0.512 0.992-0.352s166.752-70.272 336.256-141.632c84.864-35.744 170.368-71.744 236.128-99.52 65.76-27.616 114.368-47.872 117.12-48.96 2.624-1.024 1.376-1.024 3.264-1.024z"/>
+          </svg>    
+          
+          <div>{{contacts_tg}}</div>
+        </a>
+        <a id="open-chat-modal-bottom" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
+          <svg class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2" /> -->
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+          <div>{{contacts_chat}}</div>
+        </a>
       </div>
     </div>
-
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-start xl:items-center">
-      <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="3400" data-aos-once="true">
-        <h2 class="text-3xl font-bold mb-4">{{history2_title}}</h2>
-        <p class="mb-8 text-md">{{history2_text}}</p>
-      </div>
-      <div class="w-full lg:w-1/2 p-8" data-aos="fade-left" data-aos-duration="3400" data-aos-once="true">
-        <object data="Mark.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
+    <div class="md:w-2/3 bg-gray-800 rounded-lg shadow-lg p-6 mt-8 sm:m-8 md:mx-12 md:mt-24 ">
+      <h2 class="text-2xl font-bold mb-4">{{form_title}}</h2>
+      <form id="form" class="space-y-4">
+        <div>
+          <label  class="block font-medium text-gray-300 mb-1">{{form_name}}</label>
+          <input type="text" id="name" name="name" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white" required>
+        </div>
+        <div>
+          <label  class="block font-medium text-gray-300 mb-1">{{form_contact}}</label>
+          <input type="text" name="contact" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white" required>
+        </div>
+        <div>
+          <label  class="block font-medium text-gray-300 mb-1">{{form_comment}}</label>
+          <textarea id="comment" name="comment" rows="3" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
+          {{form_btn}}
+        </button>
+      </form>
+      <div id="form-send" style="height: 277px; margin-bottom: 30px;" class="flex flex-col justify-center items-center hidden">
+        <img src="media/clarity--form-line.svg" class="w-16 h-16 my-6" alt="Icon" />
+        <p class="text-lg text-center">{{form_send}}</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start xl:items-center">
-      <div class="w-full lg:w-1/2 p-8" data-aos="fade-right" data-aos-duration="5000" data-aos-once="true">
-        <object data="Alina.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
-      </div>
-      <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="5000" data-aos-once="true">
-        <h2 class="text-3xl font-bold mb-4">{{history3_title}}</h2>
-        <p class="mb-8 text-md">{{history3_text}}</p>
-      </div>
-    </div>
-    <div id="faq"></div>
-  </section>
+
 
 
 
@@ -655,7 +756,7 @@
 
 <!-- ACCARDION -->
 
-
+<div id="faq"></div>
   <section class="pt-4 md:py-20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-20">
       <h2 class="text-3xl text-white font-bold mb-16 text-center"> {{faq_title}} </h2>
@@ -807,59 +908,55 @@
     <div id="contact"></div>
   </section>
   
-  
+
+
+
+  <div class="flex justify-center items-center gap-4">
+    <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
+      <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+      </svg>
+      <span>{{cta_button}}</span>
+    </a>
+  </div>
 
 
 
 
 
-<!-- CONTACTS BLOcK -->
 
 
-<section class="bg-gray-950 m-4 md:m-20 text-white">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center md:justify-between">
-    <div class="md:w-1/3 space-y-8 text-center">
-      <h2 class="text-3xl font-bold">{{contacts_title}}</h2>
-      <div class="flex flex-col items-start space-y-4 w-48 mx-auto">
-        <a href="https://t.me/ai_m_welcome_bot" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
-          <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon w-16 h-16" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1">
-            <path d="M834.24 127.872a95.168 95.168 0 0 0-29.856 7.136h-0.128c-9.12 3.616-52.48 21.856-118.4 49.504l-236.224 99.488c-169.504 71.36-336.128 141.632-336.128 141.632l1.984-0.768s-11.488 3.776-23.488 12a64.96 64.96 0 0 0-18.752 18.144c-5.888 8.64-10.624 21.856-8.864 35.52 2.88 23.104 17.856 36.96 28.608 44.608 10.88 7.744 21.248 11.36 21.248 11.36h0.256l156.256 52.64c7.008 22.496 47.616 156 57.376 186.752 5.76 18.368 11.36 29.856 18.368 38.624 3.392 4.48 7.36 8.224 12.128 11.232a35.808 35.808 0 0 0 7.872 3.392l-1.6-0.384c0.48 0.128 0.864 0.512 1.216 0.64 1.28 0.352 2.144 0.48 3.776 0.736 24.736 7.488 44.608-7.872 44.608-7.872l1.12-0.896 92.256-84 154.624 118.624 3.52 1.504c32.224 14.144 64.864 6.272 82.112-7.616 17.376-13.984 24.128-31.872 24.128-31.872l1.12-2.88 119.488-612.128c3.392-15.104 4.256-29.248 0.512-42.976a57.824 57.824 0 0 0-24.992-33.504 59.904 59.904 0 0 0-34.144-8.64z m-3.232 65.6c-0.128 2.016 0.256 1.792-0.64 5.664v0.352l-118.368 605.76c-0.512 0.864-1.376 2.752-3.744 4.64-2.496 1.984-4.48 3.232-14.88-0.896l-189.12-144.992-114.24 104.128 24-153.28 308.992-288c12.736-11.84 8.48-14.336 8.48-14.336 0.896-14.528-19.232-4.256-19.232-4.256l-389.632 241.376-0.128-0.64-186.752-62.88v-0.128l-0.48-0.096a8.64 8.64 0 0 0 0.96-0.384l1.024-0.512 0.992-0.352s166.752-70.272 336.256-141.632c84.864-35.744 170.368-71.744 236.128-99.52 65.76-27.616 114.368-47.872 117.12-48.96 2.624-1.024 1.376-1.024 3.264-1.024z"/>
-          </svg>    
-          
-          <div>{{contacts_tg}}</div>
-        </a>
-        <a id="open-chat-modal-bottom" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
-          <svg class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2" /> -->
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
-          </svg>
-          <div>{{contacts_chat}}</div>
-        </a>
-      </div>
+
+<!-- HISTORYS -->
+
+<section class="py-4 md:py-20 text-sky-100">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start xl:items-center">
+    <div class="w-full lg:w-1/2 p-8" data-aos="fade-right" data-aos-duration="5000" data-aos-once="true">
+      <object data="media/Evelin.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
     </div>
-    <div class="md:w-2/3 bg-gray-800 rounded-lg shadow-lg p-6 mt-8 sm:m-8 md:mx-12 md:mt-24 ">
-      <h2 class="text-2xl font-bold mb-4">{{form_title}}</h2>
-      <form id="form" class="space-y-4">
-        <div>
-          <label  class="block font-medium text-gray-300 mb-1">{{form_name}}</label>
-          <input type="text" id="name" name="name" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white" required>
-        </div>
-        <div>
-          <label  class="block font-medium text-gray-300 mb-1">{{form_contact}}</label>
-          <input type="text" id="contact" name="contact" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white" required>
-        </div>
-        <div>
-          <label  class="block font-medium text-gray-300 mb-1">{{form_comment}}</label>
-          <textarea id="comment" name="comment" rows="3" class="w-full bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500 text-white"></textarea>
-        </div>
-        <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-md transition-colors duration-300">
-          {{form_btn}}
-        </button>
-      </form>
-      <div id="form-send" style="height: 277px; margin-bottom: 30px;" class="flex flex-col justify-center items-center hidden">
-        <img src="clarity--form-line.svg" class="w-16 h-16 my-6" alt="Icon" />
-        <p class="text-lg text-center">{{form_send}}</p>
-      </div>
+    <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+      <h2 class="text-3xl font-bold mb-4">{{history1_title}}</h2>
+      <p class="mb-8 text-md">{{history1_text}}</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-start xl:items-center">
+    <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="3400" data-aos-once="true">
+      <h2 class="text-3xl font-bold mb-4">{{history2_title}}</h2>
+      <p class="mb-8 text-md">{{history2_text}}</p>
+    </div>
+    <div class="w-full lg:w-1/2 p-8" data-aos="fade-left" data-aos-duration="3400" data-aos-once="true">
+      <object data="media/Mark.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-start xl:items-center">
+    <div class="w-full lg:w-1/2 p-8" data-aos="fade-right" data-aos-duration="5000" data-aos-once="true">
+      <object data="media/Alina.svg" type="image/svg+xml" class="w-1/2 h-auto mx-auto"></object>
+    </div>
+    <div class="w-full lg:w-1/2 lg:pl-12 relative p-8" data-aos="fade-up" data-aos-duration="5000" data-aos-once="true">
+      <h2 class="text-3xl font-bold mb-4">{{history3_title}}</h2>
+      <p class="mb-8 text-md">{{history3_text}}</p>
     </div>
   </div>
 </section>
@@ -867,8 +964,14 @@
 
 
 
-
-
+<div class="flex justify-center items-center gap-4">
+  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
+    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+    <span>{{cta_button}}</span>
+  </a>
+</div>
 
 
 
@@ -1156,6 +1259,14 @@
 // Languages
 const languages = {
   ru: {
+    presentations: {
+      'AI assistant: HR+': ['media/hr+1.png','media/hr+2.png','media/hr+3.png','media/hr+4.png','media/hr+5.png','media/hr+6.png','media/hr+7.png','media/hr+8.png','media/hr+9.png'],
+      'AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
+      'AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/seo9.png'],
+      // 'W AI assistant: HR+': ['media/hr+1.png','media/hr+2.png','media/hr+3.png','media/hr+4.png','media/hr+5.png','media/hr+6.png','media/hr+7.png','media/hr+8.png','media/hr+9.png'],
+      // 'W AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
+      // 'W AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/seo9.png'],
+    },
     header_about: `О нас`,
     header_solutions: `Решения`,
     header_features: `Преимущества`,
@@ -1204,7 +1315,7 @@ const languages = {
     feature7_text: `Мы предлагаем целую комплекс IT-решений на базе нейросетей - от ботов до веб-приложений, способных взаимодействовать друг с другом.`,
     feature8_title: `Собственная программная база`,
     feature8_text: `Мы разработали собственную систему, позволяющую использовать различные модели ИИ и расширяющую их возможности.`,
-    cta_button: `Узнать больше`,
+    cta_button: `Узнать стоимость`,
     history1_title: `Эвелин - владелица сети отелей.`,
     history1_text: `Она хотела улучшить и ускорить взаимодействие с постояльцами, эффективно их информировать и повышать лояльность.
     <br><br>Для этого Эвелин заказала бота, который отвечает на стандартные вопросы, такие как стоимость номеров, условия проживания и услуги отеля, возможность организации мероприятий, а также присылает важные уведомления и информацию о достопримечательностях, ближайших ресторанах и услугах её бизнес-партнеров, таких как аренда машин.
@@ -1471,7 +1582,8 @@ const languages = {
     let str = document.body.innerHTML;
     const oldLang = languages[selectedLanguage];    
     document.body.innerHTML = Object.keys(oldLang).reduce((acc, key) => acc = acc.split(oldLang[key]).join(languages[lang][key]),str);
-    window.localStorage.setItem('lang', lang)
+    window.localStorage.setItem('lang', lang);
+    initPresses(languages[lang]?.presentations||{});
     initCarusel();
     initAccardeon();
     initChat();
@@ -1495,7 +1607,7 @@ const languages = {
   // ---
 
   
-
+  initPresses(languages[selectedLanguage]?.presentations||{});
   initCarusel();
   initAccardeon();
   initChat();
