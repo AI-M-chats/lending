@@ -1581,7 +1581,7 @@ const languages = {
   function updateLang(lang){
     let str = document.body.innerHTML;
     const oldLang = languages[selectedLanguage];    
-    document.body.innerHTML = Object.keys(oldLang).reduce((acc, key) => acc = acc.split(oldLang[key]).join(languages[lang][key]),str);
+    document.body.innerHTML = Object.keys(oldLang).reduce((acc, key) => acc = acc.split(`>${oldLang[key]}<`).join(`>${languages[lang][key]}<`),str);
     window.localStorage.setItem('lang', lang);
     initPresses(languages[lang]?.presentations||{});
     initCarusel();
