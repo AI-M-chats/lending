@@ -661,6 +661,11 @@ ${ithems}
       presentations.appendChild(header);
       presentations.appendChild(div);
     })
+    new Array(20).fill('').map((_,i) => {
+      const div = document.createElement('div');
+      div.id = `presentation${i}`
+      presentations.appendChild(div);
+    })
   }
   
   function prevSlide(presentationId) {
