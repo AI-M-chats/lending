@@ -39,7 +39,31 @@
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/100751436" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
-   
+
+  <!-- utm links -->
+  <script>
+    function sendUtm() {
+      const usp = new URLSearchParams(window.location.search);
+      const utm = usp.get('_utm')
+      console.log('UTM', utm)
+      if(!utm) return 
+      const data = {
+        'entry.288027570': utm,
+        'entry.1520944186': new Date().toLocaleString('ru-RU')
+      }
+      fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzRa3btKoaW5l0s3pzOAPD4E440d2ySyTwKZDL0y6QEG5JFw/formResponse', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+          body: new URLSearchParams(data).toString()
+      })
+    }
+    sendUtm()
+  </script>
+
+
   <style>
     * {
       font-family: 'Netflix Sans', sans-serif;
