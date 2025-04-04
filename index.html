@@ -471,7 +471,7 @@
       <div class="hero-left">
         <h1 class="hero-title">{{hero_title}}</h1>
         <p class="hero-description px-4 sm:px-0">{{hero_description}}</p>
-        <a href="#solutions" class="hero-button">{{hero_button}}</a>
+        <a href="#contact" class="hero-button">{{hero_button}}</a>
       </div>
       <div class="hero-right">
         <object data="media/logo.svg" type="image/svg+xml" class="w-full"></object>
@@ -594,11 +594,11 @@
 <!-- AI-conversation -->
 
 
-<section class="text-white pt-28 relative">
+<section class="text-white pt-36 pb-12 relative">
     <div  id="about" class="absolute -top-24"></div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
-          <h2 class="text-3xl font-bold mb-4">{{asistent_title}}</h2>
+          <h2 class="text-4xl font-bold mb-8">{{asistent_title}}</h2>
           <p class="text-lg mb-6">{{about_text}}</p>
         </div>
         <div class="flex flex-col sm:flex-row justify-center gap-8 sm:gap-16 mt-16 w-48 sm:w-full mx-auto">
@@ -609,7 +609,7 @@
             
             <div>{{contacts_tg}}</div>
           </a>
-          <a id="open-chat-modal" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
+          <a open-chat-modal class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
             <svg class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2" /> -->
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -685,7 +685,7 @@
 
 
 <div class="flex justify-center items-center gap-4">
-  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
+  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 mx-auto text-white">
     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
     </svg>
@@ -755,7 +755,7 @@ ${ithems}
 <!-- CONTACTS BLOcK -->
 
 <section class="text-white">
-  <a href="#contact" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-16 h-16" style="position: fixed; bottom: 1rem; right: 1rem;">
+  <a open-chat-modal class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-16 h-16" style="position: fixed; bottom: 2rem; right: 1.5rem; border: 2px solid #5f8181;">
     <svg class="w-3/5 h-3/5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M13.5 3a8.5 8.5 0 0 1 0 17H13v.99A1.01 1.01 0 0 1 11.989 22c-2.46-.002-4.952-.823-6.843-2.504C3.238 17.798 2.002 15.275 2 12.009V11.5A8.5 8.5 0 0 1 10.5 3zm0 2h-3A6.5 6.5 0 0 0 4 11.5l.001.665c.04 2.642 1.041 4.562 2.475 5.836C7.714 19.103 9.317 19.76 11 19.945v-.935c0-.558.452-1.01 1.01-1.01h1.49a6.5 6.5 0 1 0 0-13m-5 5a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3m7 0a1.5 1.5 0 1 1 0 3a1.5 1.5 0 0 1 0-3"/></g></svg>
   </a>
 </section>
@@ -772,7 +772,7 @@ ${ithems}
           
           <div>{{contacts_tg}}</div>
         </a>
-        <a id="open-chat-modal-bottom" class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
+        <a open-chat-modal class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-48 h-48">
           <svg class="w-16 h-16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <!-- <path d="M22 12h-4l-3 9L9 3l-3 9H2" /> -->
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
@@ -972,7 +972,7 @@ ${ithems}
 
 
   <div class="flex justify-center items-center gap-4">
-    <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
+    <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 mx-auto text-white">
       <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
       </svg>
@@ -1025,7 +1025,7 @@ ${ithems}
 
 
 <div class="flex justify-center items-center gap-4">
-  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 open-chat-modal mx-auto text-white">
+  <a href="#contact" class="flex justify-center items-center gap-4 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full py-3 px-6 mx-auto text-white">
     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
     </svg>
@@ -1123,14 +1123,10 @@ ${ithems}
       if (e.key === 'Enter') send()
     }
 
-    document.getElementById('open-chat-modal').addEventListener('click', () => {
+    document.querySelectorAll('[open-chat-modal]').forEach(btn => btn.addEventListener('click', () => {
       chatModal.classList.remove('hidden');
       document.addEventListener('keypress', listenEnter); 
-    });
-    document.getElementById('open-chat-modal-bottom').addEventListener('click', () => {
-      chatModal.classList.remove('hidden');
-      document.addEventListener('keypress', listenEnter); 
-    });
+    }));
     chatModal.addEventListener('click', (event) => {
       if (event.target.id !== 'chat-modal') return;
       chatModal.classList.add('hidden');
@@ -1323,7 +1319,116 @@ const languages = {
       'AI assistant: HR+': ['media/hr+1.png','media/hr+2.png','media/hr+3.png','media/hr+4.png','media/hr+5.png','media/hr+6.png','media/hr+7.png','media/hr+8.png','media/hr+9.png'],
       'AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
       'AI chat on site': ['media/plugin_chat_1.png','media/plugin_chat_2.png','media/plugin_chat_3.png','media/plugin_chat_4.png','media/plugin_chat_5.png','media/plugin_chat_6.png','media/plugin_chat_7.png','media/plugin_chat_8.png','media/plugin_chat_9.png'],
-      'AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/seo9.png'],
+      'AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/tgSMM9.png'],
+      'AI Telegram SMM': ['media/tgSMM1.png','media/tgSMM2.png','media/tgSMM3.png','media/tgSMM4.png','media/tgSMM5.png','media/tgSMM6.png','media/tgSMM7.png','media/tgSMM8.png','media/tgSMM9.png'],
+      // 'W AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
+      // 'W AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/seo9.png'],
+    },
+    header_about: `О нас`,
+    header_solutions: `Решения`,
+    header_features: `Преимущества`,
+    header_examples: `Примеры`,
+    header_faq: `FAQ`,
+    header_contact: `Контакты`,
+    hero_title: `AI-ассистенты и автоматизация бизнеса`,
+    hero_description: `Используйте современные технологии для автоматизации и развития вашего бизнеса.`,
+    hero_button: `Внедрить`,
+    bots_title: `Наши решения`,
+    bots_btn: `Узнать больше`,
+    bot1_title: `Контент-мейкинг`,
+    bot1_text: `Бот способный изучать актуальные новости по выбранным тематикам, составлять посты, используя ваше смысловое ядро, вносить правки и автоматически постить материал в телеграм-канал или сео-блог.`,
+    bot2_title: `Продажи`,
+    bot2_text: `Внедрите решения, которые позволяют мгновено реагировать на входящий запрос, консультировать клиента и собирать о нем данные, эффективно закрывая его на целевое действие. Вы получаете результат в виде записи в таблице или CRM-системе или сообщения.`,
+    bot3_title: `Лид-магниты и автоворонки`,
+    bot3_text: `Наши боты дадут персонализированную пользу вашим клиентам от консультации до генерации сайтов, а затем проведут лида по автоворонке, презентуя и продавая ваши услуги, а также собирая отзывы для допродажи.`,
+    bot4_title: `Виджет`,
+    bot4_text: `Мы готовы предоставить встраиваемый виджет с чатом или умную форму на ваш сайт, способную эффективно взаимодействовать с вашими клиентами или персоналом.`,
+    bot5_title: `Рекрутинг`,
+    bot5_text: `Наши разработки в сфере HR позволяют автоматизировать процесс подбора кандидатов, проводить собеседования с учетом резюме соискателя, анализировать слабые и сильные стороны и выдавать детальное заключение. `,
+    bot6_title: `Email-маркетинг`,
+    bot6_text: `Мы готовы предложить бота, который ищет контакты потенциальных клиентов на основе их действий в сети, а затем формулирует уникальное персонализированное сообщение и отправляет его.`,
+    bot7_title: `Обучение`,
+    bot7_text: `Наши боты могут на основе ваших данных по шагам обучать студентов или новый персонал, а также предоставлять справки и служить глоссарием.`,
+    bot8_title: `Автоматизация процессов`,
+    bot8_text: `Наши решения помогают повысить продуктивность сотрудников, сокращая количество ошибок и открывая новые возможности для масштабирования и роста вашего бизнеса.`,
+    bot9_title: `Аналитика`,
+    bot9_text: `Наши боты могут собирать информацию с определенного количества источников и получать удобную статистику и детальный анализ соответствующий выбранным вами целям.`,
+    asistent_title: `Создайте своего ИИ-ассистента`,
+    about_text: `Мы - энтузиасты искуственного интеллекта и профессионалы в сфере IT-решений для бизнеса. Открывайте возможности современного мира вместе с нами и создайте свои собственые решения. Создадим будущее вместе!`,
+    feature1_title: `Интеграция с множеством каналов`,
+    feature1_text: `Ассистенты могут работать в различных социальных сетях, мессенджерах и в качестве встраиваемых форм и виджетов на сайте.`,
+    feature2_title: `Поддержка и сопровождение`,
+    feature2_text: `Поддержка на всех этапах — от разработки до внедрения. Мы всегда готовы услышать ваши запросы и внести изменения.`,
+    feature3_title: `Гибкость и масштабируемость`,
+    feature3_text: `Наши ассистенты легко адаптируются к изменениям в бизнесе и могут быть расширены новыми функциями и возможностями.`,
+    feature4_title: `Поддержка сторонних API`,
+    feature4_text: `Ассистенты могут подключаться к вашей CRM-системе или к внешним сервисам для лучшей встраиваемости в ваши бизнес-процессы.`,
+    feature5_title: `Мгновенная аналитика и отчетность`,
+    feature5_text: `Ассистенты реагируют на запросы, собирают данные и генерируют отчеты в режиме реального времени.`,
+    feature6_title: `Индивидуальный подход`,
+    feature6_text: `Мы разрабатываем уникальные решения для вашего бизнеса с учетом ваших индивидуальных потребностей и задач.`,
+    feature7_title: `Комплексные решения`,
+    feature7_text: `Мы предлагаем целую комплекс IT-решений на базе нейросетей - от ботов до веб-приложений, способных взаимодействовать друг с другом.`,
+    feature8_title: `Собственная программная база`,
+    feature8_text: `Мы разработали собственную систему, позволяющую использовать различные модели ИИ и расширяющую их возможности.`,
+    cta_button: `Узнать стоимость`,
+    history1_title: `Эвелин - владелица сети отелей.`,
+    history1_text: `Она хотела улучшить и ускорить взаимодействие с постояльцами, эффективно их информировать и повышать лояльность.
+    <br><br>Для этого Эвелин заказала бота, который отвечает на стандартные вопросы, такие как стоимость номеров, условия проживания и услуги отеля, возможность организации мероприятий, а также присылает важные уведомления и информацию о достопримечательностях, ближайших ресторанах и услугах её бизнес-партнеров, таких как аренда машин.
+    <br><br>Кроме этого для Эвелин была настроена email-кампания с персонализированными предложениями для гостей на основе их истории бронирований, уведомлениями о специальных предложениях и акциях.
+    <br><br>И поскольку её сеть развивается и ей требуется новый персонал, она также получила HR-ассистента, который собирает данные кандидатов, проводит анкетирование и выдает ей заключение в форме резюме.`,
+    history2_title: `Марк занимается обменом криптовалют.`,
+    history2_text: `В своей практике он сталкивался с ошибками операторов и клиентов и жалобами на долгую обработку запросов.
+    <br><br>Для ускорения процессов перевода средств и минимизации человеческих ошибок он заказал комплексное решение.
+    На его сайт была внедрена умная форма, способная проверять курс валют и дающая пошаговые инструкции для перевода по оптимальным реквизитам.
+    При получении подтверждения от клиента, форма отправляет уведомление менеджеру в телеграм-бот, который генерирует уникальную инструкцию для данного перевода, содержащую ссылку, необходимую для его проверки, а также кнопку для автоматической балансировки валют. В случае перевода из криптовалюты в фиатную валюту инструкция также содержит копируемые реквизиты и ссылку на подходящий банковский аккаунт для перевода.
+    <br><br>Таким образом, ему удалось сохранить мануальный контроль за переводами и при этом значительно ускорить подтверждение и исключить ошибки.
+    <br><br>Кроме того, для повышения репутации и увеличения трафика Марк заказал собственный новостной телеграм-канал, для которого бот собирает актуальную информацию в сфере криптовалют из разных источников, анализирует и пишет уникальные статьи, сопровождая их генерацией релевантных картинок.`,
+    history3_title: `Алина - блогер и автор обучающих курсов.`,
+    history3_text: `Ей постоянно был нужен новый актуальный контент, она хотела повысить лояльность и вовлеченность своей аудитории, а также увеличить продажи своих авторских курсов.
+    <br><br>Для этого для неё был разработан бот-копирайтер, который автоматически создает контент-план и после согласования генерирует и выкладывает посты в ее телеграм-канал. Для создания же reels-video был создан бот, который формирует для Алины подробный сценарий с готовым текстом и рекомендациями по поводу съемки и подбора треков, учитывая стиль её контента и беря во внимание актуальные тренды.
+    <br><br>А для продажи своих курсов она предложила своим подписчикам пройти серию уроков в специальном боте, который объясняет материал, дает задание и проверяет его, а после этого переходит к следующему уроку. В конце пробной серии занятий бот предлагает пользователю пройти полный курс, отправляя мотивирующие сообщения каждый день.`,
+    faq_title: `Часто задаваемые вопросы`,
+    faq1_question: `Какие задачи могут выполнять ваши ИИ-ассистенты?`,
+    faq1_answer: `Наши ИИ-ассистенты способны автоматизировать широкий спектр задач, таких как обработка запросов клиентов, управление контентом, создание маркетинговых кампаний, сбор и анализ данных и многие другие. Возможности действительно широки и мы готовы подобрать именно тот функционал, который подойдет под ваши конкретные задачи.`,
+    faq2_question: `Какие типы бизнесов могут использовать ваших ИИ-ассистентов?`,
+    faq2_answer: `Наши решения универсальны и подходят для различных отраслей: e-commerce, финансы, маркетинг, HR, логистика, образование и многое другое.`,
+    faq3_question: `Можем ли мы изменить или добавить функции ассистента после внедрения?`,
+    faq3_answer: `Да, наши ассистенты могут быть легко обновлены или расширены новыми функциями по мере изменения ваших бизнес-потребностей или стратегий.`,
+    faq4_question: `Могут ли ваши ИИ-ассистенты обучаться и улучшать свои действия со временем?`,
+    faq4_answer: `Да, многие наши ассистенты используют алгоритмы машинного обучения, что позволяет им становиться более эффективными по мере использования и анализа данных. Кроме того, ассистент может быть простроен таким образом, чтобы обучаться на основе взаимодействий с вами или вашими клиентами и учитывать историю этих взаимодействий в дальнейшем.`,
+    faq5_question: `Есть ли ограничения на количество пользователей, которые могут работать с ассистентом?`,
+    faq5_answer: `Нет, наши решения масштабируются в зависимости от ваших потребностей, и ассистенты могут поддерживать работу с любым количеством пользователей.`,
+    faq6_question: `Смогут ли ассистенты работать 24/7?`,
+    faq6_answer: `Да, наши ИИ-ассистенты работают круглосуточно, обеспечивая непрерывную поддержку и выполнение задач, даже когда сотрудники не на месте.`,
+    faq7_question: `Можно ли интегрировать ассистентов с социальными сетями и мессенджерами?`,
+    faq7_answer: `Да, наши ассистенты могут работать с популярными платформами, такими как Telegram, Instagram, WhatsApp и другими, чтобы взаимодействовать с клиентами через социальные сети и мессенджеры.`,
+    faq8_question: `Как долго занимает разработка ИИ-ассистента?`,
+    faq8_answer: `Разработка занимает обычно 2-4 недели, однако всё зависит от вашего конкретного запроса, мы готовы обрисовать сроки сразу же после обсуждения и формирования вашего личного технического задания.`,
+    faq9_question: `Сколько стоят ваши решения?`,
+    faq9_answer: `Каждый проект стоит по-разному, исходя из ваших индивидуальных потребностей. Однако мы сразу готовы заявить, что не берем денег за разработку, а взымаем помесячную оплату, устанавливаемую на основе договоренности в зависимости от сложности ассистента. Чтобы начать разработку комплексных решений, мы оставляем за собой право запросить плату в размере подписки от отдого до нескольких месяцев, которая впоследствии учитывается и продукт считается оплаченным на этот период.`,
+    faq10_question: `Как проходит наше взаимодействие?`,
+    faq10_answer: `Вы оставляете заявку по кнопке ниже.
+    Мы связываемся с вами и согласовываем ваше техническое задание.
+    Через оговоренное время мы предоставляем вам рабочий бот и даем время на правки.
+    После этого с учетом ваших пожеланий мы дорабатываем продукт и даем вам его финальную версию.`,
+    contacts_title: `Расчитать стоимость`,
+    contacts_tg: `Telegram`,
+    contacts_chat: `На сайте`,
+    form_title: `Свяжитесь с нами`,
+    form_name: `Ваше имя`,
+    form_contact: `Telegram tag или номер телефона`,
+    form_comment: `Комментарий`,
+    form_btn: `Отправить`,
+    form_send: `Спасибо, ваша заявка успешно отправлена!`,
+    dialog_first: `Я - Элис, умный помощник от AI-M, я помогу вам узнать как нейросети могут оптимизировать и развивать ваше дело, подобрать решение именно для вас и отвечу на ваши вопросы. Скажите, в какой сфере вы работаете?`,
+  },
+  ruOld: {
+    presentations: {
+      'AI assistant: HR+': ['media/hr+1.png','media/hr+2.png','media/hr+3.png','media/hr+4.png','media/hr+5.png','media/hr+6.png','media/hr+7.png','media/hr+8.png','media/hr+9.png'],
+      'AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
+      'AI chat on site': ['media/plugin_chat_1.png','media/plugin_chat_2.png','media/plugin_chat_3.png','media/plugin_chat_4.png','media/plugin_chat_5.png','media/plugin_chat_6.png','media/plugin_chat_7.png','media/plugin_chat_8.png','media/plugin_chat_9.png'],
+      'AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/tgSMM9.png'],
       'AI Telegram SMM': ['media/tgSMM1.png','media/tgSMM2.png','media/tgSMM3.png','media/tgSMM4.png','media/tgSMM5.png','media/tgSMM6.png','media/tgSMM7.png','media/tgSMM8.png','media/tgSMM9.png'],
       // 'W AI Avito chat': ['media/avito1.png','media/avito2.png','media/avito3.png','media/avito4.png','media/avito5.png','media/avito6.png','media/avito7.png','media/avito8.png','media/avito9.png'],
       // 'W AI assistant: SEO+': ['media/seo1.png','media/seo2.png','media/seo3.png','media/seo4.png','media/seo5.png','media/seo6.png','media/seo7.png','media/seo8.png','media/seo9.png'],
@@ -1426,7 +1531,7 @@ const languages = {
     form_btn: `Отправить`,
     form_send: `Спасибо, ваша заявка успешно отправлена!`,
     dialog_first: `Я - Элис, умный помощник от AI-M, я помогу вам узнать как нейросети могут оптимизировать и развивать ваше дело, подобрать решение именно для вас и отвечу на ваши вопросы. Скажите, в какой сфере вы работаете?`,
-  },
+  }, 
   en: {
     header_about: `About Us`,
     header_solutions: `Solutions`,
