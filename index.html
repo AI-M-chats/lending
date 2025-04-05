@@ -439,10 +439,10 @@
         <nav>
           <ul class="flex flex-wrap space-x-4">
             <!-- <li class="hidden md:block"><a href="#about" class="hover:text-gray-400">{{header_about}}</a></li> -->
-            <li class="hidden md:block"><a href="#solutions" class="hover:text-gray-400">{{header_solutions}}</a></li>
+            <li><a href="#solutions" class="hover:text-gray-400">{{header_solutions}}</a></li>
             <li class="hidden md:block"><a href="#features" class="hover:text-gray-400">{{header_features}}</a></li>
             <li class="hidden md:block"><a href="#examples" class="hover:text-gray-400">{{header_examples}}</a></li>
-            <li><a href="#faq" class="hover:text-gray-400">{{header_faq}}</a></li>
+            <li class="hidden md:block"><a href="#faq" class="hover:text-gray-400">{{header_faq}}</a></li>
             <li><a href="#contact" class="hover:text-gray-400">{{header_contact}}</a></li>
           </ul>
         </nav>
@@ -500,9 +500,15 @@
 
 
 <!-- CARUSEL -->
-  <div id="solutions" class="relative bottom-48"></div>
-  <section class="text-white">
-    <!-- <div class="text-center">
+  <div id="solutions" class="mb-16"></div>
+  <!-- вместо карусели будут презы -->
+  <section class="flex flex-col items-center justify-center mt-4 lg:hidden">
+    <div presentations>
+    </div>
+  </section>
+  <!--   -->
+  <section class="text-white hidden lg:block">
+    <!-- <div class="text-center md:hidden">
       <h2 class="text-3xl font-bold mb-16">{{bots_title}}</h2>
     </div> -->
     <div class="container mx-auto px-1 sm:px-4 ">
@@ -522,7 +528,7 @@
                   <h3 class="text-xl font-bold m-8">{{bot1_title}}</h3>
                   <img src="media/blog_12747824.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">{{bot1_text}}</p>
-                  <a href="#presentation3" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation1-3" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item carousel-item--next control-next">
@@ -530,7 +536,7 @@
                   <h3 class="text-xl font-bold m-8">{{bot2_title}}</h3>
                   <img src="media/chat-bot.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">{{bot2_text}}</p>
-                  <a href="#presentation1" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation1-1" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item">
@@ -546,7 +552,7 @@
                   <h3 class="text-xl font-bold m-8">{{bot4_title}}</h3>
                   <img src="media/q-a_17569472.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">{{bot4_text}}</p>
-                  <a href="#presentation2" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation1-2" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item">
@@ -554,7 +560,7 @@
                   <h3 class="text-xl font-bold m-8">{{bot5_title}}</h3>
                   <img src="media/hr_10051251.gif" class="w-32 h-32 mx-auto" alt="Icon" />
                   <p class="sm:m-8 text-lg">{{bot5_text}}</p>
-                  <a href="#presentation0" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
+                  <a href="#presentation1-0" class="text-blue-900 hover:text-blue-600 font-bold block text-right">{{bots_btn}}</a>
                 </div>
           </div>
           <div class="carousel-item">
@@ -700,38 +706,39 @@
 
 <!-- PRESENTATIONS -->
 
-<section id="examples" class="flex flex-col items-center justify-center mt-4 mb-36">
-  <div id="presentations">
+<section id="examples" class="flex flex-col items-center justify-center mt-4 hidden lg:flex">
+  <div presentations>
   </div>
-  <div id="contact"></div>
 </section>
     
 <script>
   function initPresses(p){
-    const presentations = document.getElementById('presentations');
-    presentations.innerHTML = '';
-    const itemPref = (imgSrc) => `<img src="${imgSrc}" class="presentation-item flex-shrink-0">`
-    Object.keys(p).map((key,i)=>{
-      let ithems = p[key].map(l => itemPref(l)).join('\n');
-      const header = document.createElement('h2');
-      header.innerText = key;
-      header.classList = 'text-white text-2xl font-bold mx-auto mb-4 mt-14';
-      const div = document.createElement('div');
-      div.classList = 'relative w-full flex justify-center overflow-hidden';
-      div.innerHTML = `<a href="#contact">
-<div id="presentation${i}" class="presentation flex overflow-x-scroll scroll-smooth">
+    const presentationsBlocks = document.querySelectorAll('[presentations]');
+    presentationsBlocks.forEach((presentations,i) => {
+      presentations.innerHTML = '';
+      const itemPref = (imgSrc) => `<img src="${imgSrc}" class="presentation-item flex-shrink-0">`
+      Object.keys(p).map((key,j)=>{
+        let ithems = p[key].map(l => itemPref(l)).join('\n');
+        const header = document.createElement('h2');
+        header.innerText = key;
+        header.classList = 'text-white text-2xl font-bold mx-auto mb-4 mt-14';
+        const div = document.createElement('div');
+        div.classList = 'relative w-full flex justify-center overflow-hidden';
+        div.innerHTML = `<a href="#contact">
+<div id="presentation${i}-${j}" class="presentation flex overflow-x-scroll scroll-smooth">
 ${ithems}
 </div>
 </a>
-<button onclick="prevSlide('presentation${i}')" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);;">❮</button>
-<button onclick="nextSlide('presentation${i}')" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);;">❯</button>`
-      presentations.appendChild(header);
-      presentations.appendChild(div);
-    })
-    new Array(20).fill('').map((_,i) => {
-      const div = document.createElement('div');
-      div.id = `presentation${i}`
-      presentations.appendChild(div);
+<button onclick="prevSlide('presentation${i}-${j}')" class="absolute left-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);">❮</button>
+<button onclick="nextSlide('presentation${i}-${j}')" class="absolute right-0 top-1/2 transform -translate-y-1/2 text-white p-4 text-2xl" style="background: rgba(31, 41, 55, 0.5);">❯</button>`
+        presentations.appendChild(header);
+        presentations.appendChild(div);
+      })
+      new Array(20).fill('').map((_,i) => {
+        const div = document.createElement('div');
+        div.id = `presentation${i}`
+        presentations.appendChild(div);
+      })
     })
   }
   
@@ -753,6 +760,7 @@ ${ithems}
 
 
 <!-- CONTACTS BLOcK -->
+<div id="contact"></div>
 
 <section class="text-white">
   <a open-chat-modal class="flex flex-col gap-4 justify-center items-center bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-full w-16 h-16" style="position: fixed; bottom: 2rem; right: 1.5rem; border: 2px solid #5f8181;">
@@ -760,7 +768,7 @@ ${ithems}
   </a>
 </section>
 
-<section class="bg-gray-950 m-4 my-20 md:m-20 text-white">
+<section class="bg-gray-950 m-4 mt-40 my-20 md:m-20 text-white">
   <div class="container mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row items-center md:justify-between">
     <div class="md:w-1/3 space-y-8 text-center">
       <h2 class="text-3xl font-bold">{{contacts_title}}</h2>
