@@ -1781,7 +1781,7 @@ const languages = {
 
   
   initPresses(languages[selectedLanguage]?.presentations||{});
-  setTimeout(()=>[...Array(20)].forEach((el,i)=>[...Array(9)].forEach(_=>prevSlide(`presentation${i}`))),1) 
+  setTimeout(()=>[...Array(20)].forEach((el,i)=>[...Array(9)].forEach(_=>prevSlide(`presentation${i}`))),3000) 
   initCarusel();
   initAccardeon();
   initChat();
