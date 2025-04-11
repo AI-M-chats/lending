@@ -384,7 +384,7 @@
         border: 2px solid #5f8181;
         border-radius: 22px;
         max-width: 90vw;
-        max-height: 90vh;
+        max-height: 56.2vw;
         overflow-y: hidden;
     }
     .presentation::-webkit-scrollbar {
@@ -393,11 +393,12 @@
     .presentation-item {
         scroll-snap-align: start;
         height: 100.57%;
+        width: 100%;
         
     }
     @media (min-aspect-ratio: 5/4) {
         .presentation {
-            max-width: calc(485vh / 4);
+            max-width: 121.2vh;
         }
     }
 
@@ -1781,7 +1782,6 @@ const languages = {
 
   
   initPresses(languages[selectedLanguage]?.presentations||{});
-  setTimeout(()=>[...Array(20)].forEach((el,i)=>[...Array(9)].forEach(_=>prevSlide(`presentation${i}`))),3000) 
   initCarusel();
   initAccardeon();
   initChat();
