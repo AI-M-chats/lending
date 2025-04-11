@@ -717,14 +717,14 @@
     const presentationsBlocks = document.querySelectorAll('[presentations]');
     presentationsBlocks.forEach((presentations,i) => {
       presentations.innerHTML = '';
-      const itemPref = (imgSrc) => `<img src="${imgSrc}" class="presentation-item flex-shrink-0">`
+      const itemPref = (imgSrc) => `<img src="${imgSrc}" class="presentation-item">`
       Object.keys(p).map((key,j)=>{
         let ithems = p[key].map(l => itemPref(l)).join('\n');
         const header = document.createElement('h2');
         header.innerText = key;
         header.classList = 'text-white text-2xl font-bold mx-auto mb-4 mt-14';
         const div = document.createElement('div');
-        div.classList = 'relative w-full flex justify-center overflow-hidden';
+        div.classList = 'relative w-full flex justify-start overflow-hidden';
         div.innerHTML = `<a href="#contact">
 <div id="presentation${i}-${j}" class="presentation flex overflow-x-scroll scroll-smooth">
 ${ithems}
