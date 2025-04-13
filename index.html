@@ -60,17 +60,7 @@
           body: new URLSearchParams(data).toString()
       })
     }
-    async function redirect(){
-      const usp = new URLSearchParams(window.location.search);
-      const redirect = usp.get('r');
-      if (redirect) window.location.href = redirect;
-      
-    }
-    async function sr(){
-      await sendUtm();
-      redirect();
-    }
-    sr();
+    sendUtm();
   </script>
 
 
