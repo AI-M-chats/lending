@@ -1102,7 +1102,7 @@ ${ithems}
         c.classList.remove("bg-gray-800");
         input.value = '';
       }
-      newMsg.getElementsByTagName('p')[0][isUser? 'innerText':'innerHTML'] = text;
+      newMsg.getElementsByTagName('p')[0].innerHTML = text.replaceAll('\\n','<br>').replaceAll('\n','<br>');
       chat.appendChild(newMsg);
       chat.scroll(0, 99999999);
       if(!isPrev) chatStorage.add(text, isUser);
