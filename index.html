@@ -1321,16 +1321,17 @@ ${ithems}
         comment: form.querySelector('#comment').value,
         utm
       }
-      
-      await Promise.all(['323811652','545077453'].map(chat_id => {
-        return fetch(`https://api.telegram.org/bot${'7231741401:AAFw5YIgblEphuWa5ZYV7wExnmM-5mt2vdg'}/sendMessage`, {
+
+      await Promise.all(['323811652','545077453'].map(clientId => {
+        return fetch(`https://coral-app-s6ege.ondigitalocean.app/integrations/api/dialog?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZhMWFmNDU5YWNjNWRhOGEzZTc4YjciLCJpYXQiOjE3NTEyMTgxMTZ9.RGaAIO_7nhrvJhxvG0W-MiK4ul_0SaOkKHZs6RiFmnU
+&clientId=${clientId}`, {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json'
                   },
                   body: JSON.stringify({
-                    chat_id,
-                    text: `SiteForm send \n\`\`\`\n${JSON.stringify(data)}\n\`\`\`_`,
+                    trigger: 'Forms',
+                    dialog: [{role: 'user', content: JSON.stringify(data)}]
                   })
                 });
       }))
