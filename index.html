@@ -1140,7 +1140,6 @@ ${ithems}
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          trigger: 'SiteAI-M',
           dialog: [{role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')}, ...chatStorage.dialog]
         })
       })
@@ -1323,14 +1322,12 @@ ${ithems}
       }
 
       await Promise.all(['323811652','545077453'].map(clientId => {
-        return fetch(`https://coral-app-s6ege.ondigitalocean.app/integrations/api/dialog?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NTZhMWFmNDU5YWNjNWRhOGEzZTc4YjciLCJpYXQiOjE3NTEyMTgxMTZ9.RGaAIO_7nhrvJhxvG0W-MiK4ul_0SaOkKHZs6RiFmnU
-&clientId=${clientId}`, {
+        return fetch(`https://build-master-zu7kk.ondigitalocean.app/forms/?clientId=${clientId}`, {
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json'
                   },
                   body: JSON.stringify({
-                    trigger: 'Forms',
                     dialog: [{role: 'user', content: JSON.stringify(data)}]
                   })
                 });
