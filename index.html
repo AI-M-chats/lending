@@ -1129,6 +1129,8 @@ ${ithems}
     }
     chatStorage.dialog.forEach(it=>add(it.content, it.role=='user', true));
 
+    if(!window.sessionStorage.getItem('chatId')) window.sessionStorage.setItem('chatId', Date.now());
+    
     const send = async function(){
       const text = input.value;
       if(!text.length) return;
@@ -1136,7 +1138,7 @@ ${ithems}
       // metadata[webclient]=web&
       let results = [];
       console.log('!!! ',[{role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')}, ...chatStorage.dialog].map(m=>({...m, text: m.content})));
-      const resp = await fetch('https://build-master-zu7kk.ondigitalocean.app/chat',{
+      const resp = await fetch(`https://build-master-zu7kk.ondigitalocean.app/chat/?chatId=${window.sessionStorage.getItem('chatId')}`,{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
