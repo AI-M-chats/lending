@@ -1136,7 +1136,7 @@ ${ithems}
       // metadata[webclient]=web&
       let results = [];
       console.log('!!! ',[{role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')}, ...chatStorage.dialog].map(m=>({...m, text: m.content})));
-      const resp = await fetch('https://coral-app-s6ege.ondigitalocean.app/integrations/api/dialog?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjM2NDgxYzFjYzMxYzY1NTNkM2Y0ZjgiLCJpYXQiOjE3Mjg5MTQ3ODJ9.69HRiwJ56X1sUWdyJ5W1Fz_ZQHEZfHn-k5PWOBXr-gs',{
+      const resp = await fetch('https://build-master-zu7kk.ondigitalocean.app/chat',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
