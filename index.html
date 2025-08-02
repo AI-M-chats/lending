@@ -1144,7 +1144,7 @@ ${ithems}
         body: JSON.stringify({
           dialog: [
             {role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')},
-            {role: 'assistant', content: fmsg.innerText},
+            {role: 'assistant', content: chat.getElementsByTagName('div')[0].innerText},  // получаю fmsg заного что бы не было замыкания при смене языка
              ...chatStorage.dialog
             ]
         })
