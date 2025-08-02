@@ -1142,7 +1142,11 @@ ${ithems}
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          dialog: [{role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')}, ...chatStorage.dialog]
+          dialog: [
+            {role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')},
+            {role: 'assistant', content: fmsg.innerText},
+             ...chatStorage.dialog
+            ]
         })
       })
       if(resp.ok) results = await resp.json();
