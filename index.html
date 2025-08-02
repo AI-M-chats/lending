@@ -1138,7 +1138,7 @@ ${ithems}
       // metadata[webclient]=web&
       let results = [];
       console.log('!!! ',[{role: 'assistant', content: '/start'+(utm? 'utm='+utm:'')}, ...chatStorage.dialog].map(m=>({...m, text: m.content})));
-      const resp = await fetch(`https://starfish-app-vjpzu.ondigitalocean.app//chat/?chatId=${window.sessionStorage.getItem('chatId')}`,{
+      const resp = await fetch(`https://starfish-app-vjpzu.ondigitalocean.app/chat/?chatId=${window.sessionStorage.getItem('chatId')}`,{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
